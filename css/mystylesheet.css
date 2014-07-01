@@ -1,0 +1,216 @@
+/* GENERAL (Raymond Xu)
+-------------------------------------------------- */
+
+body {
+    overflow-x: hidden;
+}
+
+* {
+margin: 0;
+padding: 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+
+
+/* HEADER (Raymond Xu)
+-------------------------------------------------- */
+
+header {
+    text-align: center;
+    color: #000;
+    background: #fff;
+}
+
+header .headercontainer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+@media(min-width:768px) {
+    header .headercontainer {
+        padding: 65px 0 65px;
+    }
+
+    header .intro-text .name {
+        font-size: 5em;
+        font-weight: 100;
+        font-family: "Helvetica Neue";
+    }
+
+    header .intro-text .desc {
+        font-size: 1.6em;
+        font-weight: 100;
+        font-family: "Helvetica Neue";
+    }
+}
+
+
+
+
+
+/* IMAGES
+-------------------------------------------------- */
+
+.img-circle {
+    border-radius: 50%;
+}
+
+
+
+
+
+/* BUTTONS
+-------------------------------------------------- */
+
+
+.btn-skills {
+    border-radius:50%;
+    display: inline-block;
+    border: solid 4px #91C8FF;
+    transition: all .3s ease-in-out;
+    overflow: hidden;
+}
+
+/* BROKEN HOVER CODE, BORDER LARGER THAN CIRCLE
+.btn-skills:hover,
+.btn-skills:focus,
+.btn-skills:active {
+    border: solid 4px #000;
+}
+*/
+
+
+
+
+/* SKILLS SECTION
+-------------------------------------------------- */
+
+.skills {
+    padding: 80px 80px;
+    color: #000;
+    background: #91C8FF;
+}
+
+.skills h2 {
+    font-weight: 100;
+    font-size: 2em;
+    font-family: "Helvetica Neue";
+
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.skills p {
+    font-weight: 100;
+    font-size: 1.25em;
+    font-family: "Helvetica Neue";
+
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+}
+
+
+
+
+
+/* ROW FORMAT
+-------------------------------------------------- */
+
+.row:before,
+.row:after
+{
+  content: "";
+  display: table;
+}
+.row:after
+{
+    clear:both;
+}
+
+
+
+
+
+/* COLUMNS
+-------------------------------------------------- */
+
+.columnedcontainer{
+    width: 100%;
+}
+
+.col{
+    float: left;
+    width:33.333333333333333333333%;
+    margin-left:0px;
+    margin-right:0px;
+    padding-left:0px;
+    padding-right:0px;
+}
+
+.clear{
+    clear:both;
+}
+
+
+
+
+
+
+
+
+
+
+/* PROJECTS SECTION
+-------------------------------------------------- */
+
+.projects {
+    background: #297ACC;
+}
+
+.projects h1 {
+    font-weight: 100;
+    font-size: 4em;
+    font-family: "Helvetica Neue";
+    color: #fff;
+
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+}
+
+.projects .title {
+    font-weight: 100;
+    font-size: 2.5em;
+    font-family: "Helvetica Neue";
+    color: #fff;
+
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.projects .desc {
+    font-weight: 100;
+    font-size: 1.5em;
+    font-family: "Helvetica Neue";
+    color: #fff;
+
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.projects .pic {
+    padding: 8px;
+    background-color: #fff;
+    display: inline-block;
+}
+
+.projects .nextproject {
+    margin-bottom: 100px;
+}
