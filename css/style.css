@@ -1,4 +1,4 @@
-/* GENERAL (Raymond Xu)
+/* GENERAL ATTRIBUTES
 -------------------------------------------------- */
 
 body {
@@ -16,7 +16,7 @@ padding: 0;
 
 
 
-/* HEADER (Raymond Xu)
+/* HEADER
 -------------------------------------------------- */
 
 header {
@@ -66,7 +66,6 @@ header .headercontainer {
 /* BUTTONS
 -------------------------------------------------- */
 
-
 .btn-skills {
     border-radius:50%;
     display: inline-block;
@@ -74,14 +73,6 @@ header .headercontainer {
     transition: all .3s ease-in-out;
     overflow: hidden;
 }
-
-/* BROKEN HOVER CODE, BORDER LARGER THAN CIRCLE
-.btn-skills:hover,
-.btn-skills:focus,
-.btn-skills:active {
-    border: solid 4px #000;
-}
-*/
 
 
 
@@ -119,7 +110,7 @@ header .headercontainer {
 
 
 
-/* ROW FORMAT
+/* ROW CONTAINER
 -------------------------------------------------- */
 
 .row:before,
