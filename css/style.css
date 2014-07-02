@@ -20,34 +20,36 @@ padding: 0;
 -------------------------------------------------- */
 
 header {
-    text-align: center;
     color: #000;
     background: #fff;
 }
 
 header .headercontainer {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 65px;
+    padding-bottom: 65px;
+    text-align: center;
+    width: 100%;
 }
 
-@media(min-width:768px) {
-    header .headercontainer {
-        padding: 65px 0 65px;
-    }
-
-    header .intro-text .name {
-        font-size: 5em;
-        font-weight: 100;
-        font-family: "Helvetica Neue";
-    }
-
-    header .intro-text .desc {
-        font-size: 1.6em;
-        font-weight: 100;
-        font-family: "Helvetica Neue";
-    }
+header .intro-text .title {
+    text-align: center;
+    font-size: 5em;
+    font-weight: 100;
+    font-family: "Helvetica Neue";
 }
 
+header .intro-text .desc {
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: 100;
+    font-family: "Helvetica Neue";
+}
+
+header .navcontainer {
+    width: 0%;
+    float:left;
+    padding-top: 60px; /* depends on size of nav button and headercontainer padding-top */
+}
 
 
 
@@ -63,11 +65,12 @@ header .headercontainer {
 
 
 
+
 /* BUTTONS
 -------------------------------------------------- */
 
 .btn-skills {
-    border-radius:50%;
+    border-radius: 50%;
     display: inline-block;
     border: solid 6px #91C8FF;
     transition: all .3s ease-in-out;
@@ -75,9 +78,26 @@ header .headercontainer {
 }
 
 .btn-skills:hover {
-    border-radius:50%;
+    border-radius: 50%;
     border: solid 6px #297ACC;
 }
+
+.btn-nav {
+    margin-left: 50px; /* MODIFY THIS FOR SPACING WITHOUT PUSHING THE TITLE TO THE RIGHT! */
+    border-radius: 50%;
+    display: inline-block;
+    border: solid 6px #fff;
+    transition: all .3s ease-in-out;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+}
+
+.btn-nav:hover {
+    border: solid 6px #91C8FF;
+}
+
+
 
 
 
@@ -118,13 +138,12 @@ header .headercontainer {
 -------------------------------------------------- */
 
 .row:before,
-.row:after
-{
+.row:after {
   content: "";
   display: table;
 }
-.row:after
-{
+
+.row:after {
     clear:both;
 }
 
@@ -135,11 +154,11 @@ header .headercontainer {
 /* COLUMNS
 -------------------------------------------------- */
 
-.columnedcontainer{
+.columnedcontainer {
     width: 100%;
 }
 
-.col{
+.col {
     float: left;
     width:33.333333333333333333333%;
     margin-left:0px;
@@ -148,7 +167,7 @@ header .headercontainer {
     padding-right:0px;
 }
 
-.clear{
+.clear {
     clear:both;
 }
 
@@ -168,42 +187,34 @@ header .headercontainer {
     background: #297ACC;
 }
 
-.projects h1 {
-    font-weight: 100;
-    font-size: 4em;
-    font-family: "Helvetica Neue";
-    color: #fff;
-
-    text-align: center;
-    margin-top: 100px;
-    margin-bottom: 100px;
-
-}
-
 .projects .title {
     font-weight: 100;
-    font-size: 2.5em;
+    font-size: 3.5em;
     font-family: "Helvetica Neue";
     color: #fff;
 
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .projects .desc {
     font-weight: 100;
-    font-size: 1.5em;
+    font-size: 1.75em;
     font-family: "Helvetica Neue";
     color: #fff;
 
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 45px;
 }
 
 .projects .pic {
     padding: 8px;
     background-color: #fff;
     display: inline-block;
+}
+
+.projects .firstproject {
+    margin-bottom: 80px;
 }
 
 .projects .nextproject {
