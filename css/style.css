@@ -48,7 +48,7 @@ header .intro-text .desc {
 header .navcontainer {
     width: 0%;
     float:left;
-    padding-top: 60px; /* depends on size of nav button and headercontainer padding-top */
+    padding-top: 65px; /* depends on size of nav button */
 }
 
 
@@ -83,20 +83,45 @@ header .navcontainer {
 }
 
 .btn-nav {
-    margin-left: 50px; /* MODIFY THIS FOR SPACING WITHOUT PUSHING THE TITLE TO THE RIGHT! */
+    margin-left: 30px; /* MODIFY THIS FOR SPACING WITHOUT PUSHING THE TITLE TO THE RIGHT! */
     border-radius: 50%;
     display: inline-block;
     border: solid 6px #fff;
     transition: all .3s ease-in-out;
     overflow: hidden;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
 }
 
 .btn-nav:hover {
     border: solid 6px #91C8FF;
 }
 
+.btn-nav-top {
+    border-radius: 50%;
+    display: inline-block;
+    border: solid 6px #297ACC;
+    transition: all .3s ease-in-out;
+    overflow: hidden;
+    width: 80px;
+    height: 80px;
+}
+
+.btn-nav-top:hover {
+    border: solid 6px #91C8FF;
+}
+
+.scrollToTop{
+    padding:8px; 
+    position:fixed;
+    top:58px; /* must be close to the header .navcontainer's padding-top */
+    left:22px;
+    display:none;
+}
+
+.scrollToTop:hover{
+    text-decoration:none;
+}
 
 
 
@@ -139,8 +164,8 @@ header .navcontainer {
 
 .row:before,
 .row:after {
-  content: "";
-  display: table;
+    content: "";
+    display: table;
 }
 
 .row:after {
@@ -205,6 +230,10 @@ header .navcontainer {
 
     text-align: center;
     margin-bottom: 45px;
+    text-align: center;
+
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .projects .pic {
