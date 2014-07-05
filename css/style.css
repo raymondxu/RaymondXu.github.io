@@ -54,6 +54,22 @@ header .navcontainer {
 
 
 
+/* FOOTER
+-------------------------------------------------- */
+
+footer {
+    color: #000;
+    background: #fff;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+
+
+
+
 /* IMAGES
 -------------------------------------------------- */
 
@@ -122,6 +138,22 @@ header .navcontainer {
 .scrollToTop:hover{
     text-decoration:none;
 }
+
+.btn-footer {
+    border-radius: 20%;
+    display: inline-block;
+    border: solid 6px #297ACC;
+    transition: all .3s ease-in-out;
+    overflow: hidden;
+    width: 60px;
+    height: 60px;
+}
+
+.btn-footer:hover {
+    border-radius: 25%;
+    border: solid 6px #fff;
+}
+
 
 
 
@@ -255,3 +287,11 @@ header .navcontainer {
 .projects .nextproject {
     margin-bottom: 100px;
 }
+
+
+
+
+
+
+
+
