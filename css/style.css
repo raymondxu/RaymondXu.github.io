@@ -20,7 +20,6 @@ padding: 0;
 -------------------------------------------------- */
 
 header {
-    color: #000;
     background: #fff;
 }
 
@@ -162,7 +161,7 @@ footer {
 -------------------------------------------------- */
 
 .skills {
-    padding: 80px 80px;
+    padding: 80px 40px;
     color: #000;
     background: #91C8FF;
 }
@@ -244,6 +243,26 @@ footer {
     background: #297ACC;
 }
 
+.projects headercontainer {
+    text-align: center;
+    width: 100%;
+}
+
+.projects h2 {
+    padding-top: 80px;
+    padding-bottom: 60px;
+    font-weight: 100;
+    font-size: 4.5em;
+    font-family: "Montserrat", "Hevetica Neue", sans-serif;
+    text-align: center;
+    color: #fff;
+}
+
+.projects hr {
+    width: 70%;
+    margin-left: 15%;
+}
+
 .projects .title {
     font-weight: 200;
     font-size: 3.2em;
@@ -285,7 +304,7 @@ footer {
 }
 
 .projects .nextproject {
-    margin-bottom: 100px;
+    margin-bottom: 150px;
 }
 
 

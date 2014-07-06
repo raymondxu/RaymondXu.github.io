@@ -20,6 +20,8 @@
     <meta name="description" content="My personal website">
     <title>Raymond Xu</title>
     <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    <script src="js/core.js"></script>
 
 </head>
 
@@ -44,19 +46,19 @@
       <div class="columnedcontainer">
         
         <div class="col">
-          <center><a href=""><img class="btn-skills" src="images/studenticon.png"></a></center>
+          <center><a href="#"><img class="btn-skills" src="images/studenticon.png"></a></center>
           <h2>Student</h2><br>
           <p>I will be a freshman this fall at Columbia University.</p>
         </div>
         
         <div class="col">
-          <center><a href="projects.html"><img class="btn-skills" src="images/programmingicon.png"></a></center>
+          <center><a href="#"><img class="btn-skills" src="images/programmingicon.png"></a></center>
           <h2>Programmer</h2><br>
           <p>Proficient in Java.<br>Learning Python, HTML, and CSS.</p>
         </div>
         
         <div class="col">
-          <center><a href=""><img class="btn-skills" src="images/magicianicon.png"></a></center>
+          <center><a href="#"><img class="btn-skills" src="images/magicianicon.png"></a></center>
           <h2>Magician</h2><br>
           <p>Magic is a beautiful artform that nurtures my creativity and challenges my thinking.</p>
         </div>
@@ -68,9 +70,39 @@
   </div>
 
 
-  <footer>
-    
-  </footer>
+<a href="#" class="scrollToTop"><img class="btn-nav-top" src="images/scrolltotop.png"></a>
+
+
+
+
+
+
+
+  <div class="projects"><a name="projects"></a>
+
+    <div class="headercontainer">
+      <h2>Projects</h2><hr>
+    </div>
+
+    <div class="row">
+
+          <div class="firstproject"></div>
+
+          <div class="title">Grid Game</div>
+          <div class="desc">Created a fast-paced dodging game in Java using object-oriented<br> grid manipulation.</div>
+          <center><img class="pic" onload="this.style.opacity='1';" src="images/gridgame.png"></center>
+          <div class="nextproject"></div>
+
+          <div class="title">Poker Utility</div>
+          <div class="desc">Wrote a text-based, poker chip tracking program for Texas-Hold'em.</div>
+          <center><img class="pic" onload="this.style.opacity='1';" src="images/pokerutility.png"></center>
+          <div class="nextproject"></div>
+
+    </div>
+
+  </div>
+
+
 
 
 </body>
