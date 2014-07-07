@@ -264,9 +264,9 @@ footer {
 }
 
 .projects .title {
-    font-weight: 200;
+    font-weight: 400;
     font-size: 3.2em;
-    font-family: "Helvetica Neue", sans-serif;
+    font-family: "Lato", "Helvetica Neue", sans-serif;
     color: #fff;
 
     text-align: center;
@@ -276,7 +276,7 @@ footer {
 .projects .desc {
     font-weight: 200;
     font-size: 1.55em;
-    font-family: "Helvetica Neue", sans-serif;
+    font-family: "Lato", "Helvetica Neue", sans-serif;
     color: #fff;
 
     text-align: center;
