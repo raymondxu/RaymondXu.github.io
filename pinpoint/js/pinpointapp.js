@@ -1,5 +1,5 @@
 //Author: Raymond Xu
-//Version: July 10, 2014
+//Version: July 11, 2014
 //
 //Adapted from Google Maps API
 //============================
@@ -39,12 +39,70 @@ function addMarker(location, isDestination) {
         icon: icon
       });
       markersArray.push(marker);
+
+
+
     } else {
       alert('Geocode was not successful for the following reason: '
         + status);
     }
   });
 }
+
+
+
+
+
+  function extractCoordinates(address) {
+  geocoder.geocode( { 'address': address}, function(results, status) {
+    if (status == google.maps.GeocoderStatus.OK) {
+
+          return [results[0].geometry.location.k , results[0].geometry.location.B];
+          
+    } else {
+      alert('Geocode was not successful for the following reason: ' + status);
+    }
+  });
+}
+
+
+
+
+//Calculates the centroid of all origin addresses
+//
+// [!] Doesnt work beacuse of asynchronous geocode
+//     call.
+//===============================================
+function findCentroid(originLocationArray) {
+
+  var latSum = 0;
+  var lonSum = 0;
+  var latLong;
+  var thisLat;
+  var thisLon;
+
+  for(var i = 0; i < originLocationArray.length; i++) {
+
+    latLong =  extractCoordinates(originLocationArray[i]);
+
+    thisLat = latLong[0];
+    thisLon = latLong[1];
+
+    latSum += thisLat;
+    lonSum += thisLon;
+    
+  }
+
+  var latAvg = latSum / originLocationArray.length;
+  var lonAvg = lonSum / originLocationArray.length;
+
+  return [latAvg, lonAvg];
+}
+
+
+
+
+
 
 function deleteOverlays() {
   for (var i = 0; i < markersArray.length; i++) {
@@ -74,50 +132,47 @@ function callback(response, status) {
             //     + ': ' + results[j].distance.text + ' in '
             //     + results[j].duration.text + '<br>';
 
-                distancesArray.push(results[j].distance.text); //save all the distance data
-
+              distancesArray.push(results[j].distance.text); //save all the distance data
           }
         }
 
-
-          //Calculate aggregate distances
-          //=============================
-          var aggregateDistancesArray = [];        
-          var sum; //the sum of distances from all origin addresses for a single destination
-        
-          for(var i = 0; i < destinations.length; i ++) {
-            sum = 0; //reset the sum for each destination
-            for(var j = 0; j < origins.length; j++) {
-              var permutation = response.rows[j].elements[i].distance.text; //access the stored distance data
-              sum += convertToFloat(permutation); //clean the data
-            }
-            aggregateDistancesArray.push(sum); //store aggregate distance data
+        //Calculate aggregate distances
+        //=============================
+        var aggregateDistancesArray = [];        
+        var sum; //the sum of distances from all origin addresses for a single destination
+      
+        for(var i = 0; i < destinations.length; i ++) {
+          sum = 0; //reset the sum for each destination
+          for(var j = 0; j < origins.length; j++) {
+            var permutation = response.rows[j].elements[i].distance.text; //access the stored distance data
+            sum += convertToFloat(permutation); //clean the data
           }
-        
-
-          //Find minimum aggregate distance
-          //===============================
-          var min = aggregateDistancesArray[0];
-          var minIndex = 0; //store the index as well to retrieve the actual destination with the minimum aggregate distance
-          for(var x = 0; x < aggregateDistancesArray.length; x++) {
-            if(aggregateDistancesArray[x] < min) {
-              min = aggregateDistancesArray[x];
-              minIndex = x;
-            }
+          aggregateDistancesArray.push(sum); //store aggregate distance data
+        }
+      
+        //Find minimum aggregate distance
+        //===============================
+        var min = aggregateDistancesArray[0];
+        var minIndex = 0; //store the index as well to retrieve the actual destination with the minimum aggregate distance
+        for(var x = 0; x < aggregateDistancesArray.length; x++) {
+          if(aggregateDistancesArray[x] < min) {
+            min = aggregateDistancesArray[x];
+            minIndex = x;
           }
+        }
 
-          var optimalDestination = destinations[minIndex];
-          //Print the information to the html page
-          outputDiv.innerHTML += "Meet at " + optimalDestination + ". " +  min + " miles from everyone.";
+        var optimalDestination = destinations[minIndex];
+        //Print the information to the html page
+        outputDiv.innerHTML += "Meet at " + optimalDestination + "\n";
 
 
       } //end of else
 } //end of callback method
-        
-        
-        
-        
-        
+
+
+
+
+
 //Converts a numerical string to a float and strips it of commas
 //==============================================================
 function convertToFloat(dirtyString) {
@@ -169,7 +224,9 @@ var ngAddApp = angular.module("ngAddApp", []);
       }
 
 
-
+      //Extracts the addresses in the text-forms and calculates all distance permutations
+      //using the Google Maps API and algorithmic parsing
+      //=================================================================================
       $scope.go = function() {
 
         distancesArray = [];
@@ -184,13 +241,16 @@ var ngAddApp = angular.module("ngAddApp", []);
           destinationsArray[i2] = $scope.items2[i2].text;
         }
 
+
+        //var centralOriginsArray = findCentroid(originsArray);
         calculateDistances(originsArray, destinationsArray);
-        
       }
 
 }]);
 
 
+//Google Maps call
+//================
 function calculateDistances(originsArray, destinationsArray) {
     var service = new google.maps.DistanceMatrixService();
 
@@ -212,7 +272,8 @@ function calculateDistances(originsArray, destinationsArray) {
 
 
 $(document).ready(function(){
-  //Smooth scroll to anchor
+  //Smooth scroll to anchor using JQuery
+  //====================================
   $(function() {
     $('a[href*=#]:not([href=#])').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {

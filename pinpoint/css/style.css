@@ -8,7 +8,6 @@ header .title {
 	margin-bottom: 25px;
 }
 
-
 .titlebutton:hover,
 .titlebutton:focus,
 .titlebutton:active,
@@ -31,8 +30,6 @@ header .title {
 	text-align: center;
 }
 
-
-
 .container .row .addressforms {
 	margin-bottom: 40px;
 }
@@ -45,7 +42,6 @@ header .title {
 a:hover {
   text-decoration: none !important;
 }
-
 
 html, body {
     height: 100%;
