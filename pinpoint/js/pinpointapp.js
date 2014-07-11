@@ -108,7 +108,7 @@ function callback(response, status) {
 
           var optimalDestination = destinations[minIndex];
           //Print the information to the html page
-          outputDiv.innerHTML += "Closest destination to given addresses: " + optimalDestination + " with a distance of " +  min + " km.";
+          outputDiv.innerHTML += "Meet at " + optimalDestination + ". " +  min + " miles from everyone.";
 
 
       } //end of else
@@ -199,7 +199,7 @@ function calculateDistances(originsArray, destinationsArray) {
           origins: originsArray,
           destinations: destinationsArray,
           travelMode: google.maps.TravelMode.DRIVING,
-          unitSystem: google.maps.UnitSystem.METRIC,
+          unitSystem: google.maps.UnitSystem.IMPERIAL,
           avoidHighways: false,
           avoidTolls: false
         }, callback);

@@ -1,21 +1,27 @@
 header .title {
-	font-family: "Montserrat", "Helvetica Neue";
+	font-family: "Lato";
 	text-align: center;
 	font-size: 70px;
-	font-weight: 100;
+	font-weight: 300;
 	color: #5C5CE6;
-
 	margin-top: 25px;
 	margin-bottom: 25px;
+}
+
+
+.titlebutton:hover,
+.titlebutton:focus,
+.titlebutton:active,
+.titlebutton.active {
+  	color: #4A4AB8;
+  	background-color: #fff;
+  	border-color: #fff;
 }
 
 .container .row .col-md-6 .medbutton {
 	font-size:50px;
 	height: 50px;
 	line-height: 0px;
-
-	display:inline-block;
-	vertical-align:middle;
 }
 
 .container .row .col-md-6 .medform {
@@ -24,6 +30,7 @@ header .title {
 	line-height: 50px;
 	text-align: center;
 }
+
 
 
 .container .row .addressforms {
@@ -35,7 +42,9 @@ header .title {
 	margin-bottom: 50px;
 }
 
-
+a:hover {
+  text-decoration: none !important;
+}
 
 
 html, body {
