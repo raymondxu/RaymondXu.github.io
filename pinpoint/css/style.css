@@ -1,0 +1,60 @@
+header .title {
+	font-family: "Montserrat", "Helvetica Neue";
+	text-align: center;
+	font-size: 70px;
+	font-weight: 100;
+	color: #5C5CE6;
+
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+.container .row .col-md-6 .medbutton {
+	font-size:50px;
+	height: 50px;
+	line-height: 0px;
+
+	display:inline-block;
+	vertical-align:middle;
+}
+
+.container .row .col-md-6 .medform {
+	font-size: 25px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+}
+
+
+.container .row .addressforms {
+	margin-bottom: 40px;
+}
+.container .tallbutton {
+	font-size: 40px;
+	height: 70px;
+	margin-bottom: 50px;
+}
+
+
+
+
+html, body {
+    height: 100%;
+}
+
+#map-canvas {
+    height: 50%;
+    width: 50%;
+}
+
+#outputDiv {
+	margin-top: 20px;
+	margin-bottom: 40px;
+	font-family: "Montserrat", "Helvetica Neue";
+    font-size: 40px;
+    text-align: center;
+    background-color: #B8FF94
+    color: #9900CC;
+}
+
+
