@@ -39,9 +39,6 @@ function addMarker(location, isDestination) {
         icon: icon
       });
       markersArray.push(marker);
-
-
-
     } else {
       alert('Geocode was not successful for the following reason: '
         + status);
@@ -53,12 +50,10 @@ function addMarker(location, isDestination) {
 
 
 
-  function extractCoordinates(address) {
+function extractCoordinates(address) {
   geocoder.geocode( { 'address': address}, function(results, status) {
     if (status == google.maps.GeocoderStatus.OK) {
-
           return [results[0].geometry.location.k , results[0].geometry.location.B];
-          
     } else {
       alert('Geocode was not successful for the following reason: ' + status);
     }
