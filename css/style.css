@@ -270,7 +270,7 @@ footer {
     color: #fff;
 
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 45px;
 }
 
 .projects .desc {
@@ -280,14 +280,43 @@ footer {
     color: #fff;
 
     text-align: center;
-    margin-bottom: 45px;
+    margin-bottom: 65px;
     text-align: center;
 
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.projects .aside {
+    font-weight: 200;
+    font-size: 1.55em;
+    font-family: "Lato", "Helvetica Neue", sans-serif;
+    color: #FFB56C;
+
+    text-align: center;
+    margin-bottom: 25px;
+    text-align: center;
+
+    margin-left: 200px;
+    margin-right: 200px;
 }
 
 .projects .pic {
+    padding: 10px;
+    background-color: #fff;
+    display: inline-block;
+
+    opacity:0;
+    -moz-transition: opacity 2s; /* Firefox 4 */
+    -webkit-transition: opacity 2s; /* Safari and Chrome */
+    -o-transition: opacity 2s;
+    transition: opacity 2s;
+}
+
+.projects .resizedpic {
+    height: 50%;
+    width: 50%;
+
     padding: 8px;
     background-color: #fff;
     display: inline-block;
