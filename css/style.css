@@ -69,13 +69,6 @@ footer {
 
 
 
-/* IMAGES
--------------------------------------------------- */
-
-.img-circle {
-    border-radius: 50%;
-}
-
 
 
 
@@ -136,21 +129,6 @@ footer {
 
 .scrollToTop:hover{
     text-decoration:none;
-}
-
-.btn-footer {
-    border-radius: 20%;
-    display: inline-block;
-    border: solid 6px #297ACC;
-    transition: all .3s ease-in-out;
-    overflow: hidden;
-    width: 60px;
-    height: 60px;
-}
-
-.btn-footer:hover {
-    border-radius: 25%;
-    border: solid 6px #fff;
 }
 
 
@@ -263,39 +241,31 @@ footer {
     margin-left: 15%;
 }
 
+.projects .titlecontainer {
+    width: 70%;
+    margin-left: 15%;
+    background-color: #fff;
+}
+
 .projects .title {
     font-weight: 400;
     font-size: 3.2em;
     font-family: "Lato", "Helvetica Neue", sans-serif;
-    color: #fff;
+    color: #297ACC;
 
     text-align: center;
-    margin-bottom: 45px;
+    margin-top: 30px;
+    margin-bottom: 55px;
 }
 
 .projects .desc {
     font-weight: 200;
     font-size: 1.55em;
-    font-family: "Lato", "Helvetica Neue", sans-serif;
+    font-family: "Helvetica Neue", "Lato", sans-serif;
     color: #fff;
 
     text-align: center;
-    margin-bottom: 65px;
-    text-align: center;
-
-    margin-left: 200px;
-    margin-right: 200px;
-}
-
-.projects .aside {
-    font-weight: 200;
-    font-size: 1.55em;
-    font-family: "Lato", "Helvetica Neue", sans-serif;
-    color: #FFB56C;
-
-    text-align: center;
-    margin-bottom: 25px;
-    text-align: center;
+    margin-bottom: 55px;
 
     margin-left: 200px;
     margin-right: 200px;
@@ -313,7 +283,7 @@ footer {
     transition: opacity 2s;
 }
 
-.projects .resizedpic {
+.projects .pinpointpic {
     height: 50%;
     width: 50%;
 
@@ -321,11 +291,17 @@ footer {
     background-color: #fff;
     display: inline-block;
 
+    border:8px solid #297ACC;
+
     opacity:0;
     -moz-transition: opacity 2s; /* Firefox 4 */
     -webkit-transition: opacity 2s; /* Safari and Chrome */
     -o-transition: opacity 2s;
     transition: opacity 2s;
+}
+
+.projects .pinpointpic:hover {
+    border: solid 8px #91C8FF;
 }
 
 .projects .firstproject {
