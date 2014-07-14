@@ -230,8 +230,8 @@ footer {
     padding-top: 80px;
     padding-bottom: 60px;
     font-weight: 100;
-    font-size: 4.5em;
-    font-family: "Montserrat", "Hevetica Neue", sans-serif;
+    font-size: 5em;
+    font-family: "Helvetica Neue", "Montserrat", sans-serif;
     text-align: center;
     color: #fff;
 }
@@ -248,9 +248,9 @@ footer {
 }
 
 .projects .title {
-    font-weight: 400;
+    font-weight: 100;
     font-size: 3.2em;
-    font-family: "Lato", "Helvetica Neue", sans-serif;
+    font-family: "Helvetica Neue", "Lato", sans-serif;
     color: #297ACC;
 
     text-align: center;
@@ -259,7 +259,7 @@ footer {
 }
 
 .projects .desc {
-    font-weight: 200;
+    font-weight: 100;
     font-size: 1.55em;
     font-family: "Helvetica Neue", "Lato", sans-serif;
     color: #fff;
