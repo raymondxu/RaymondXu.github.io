@@ -71,9 +71,6 @@ footer {
 
 
 
-
-
-
 /* BUTTONS
 -------------------------------------------------- */
 
@@ -242,8 +239,9 @@ footer {
 }
 
 .projects .titlecontainer {
-    width: 70%;
-    margin-left: 15%;
+    border:5px solid #fff;
+    width: 50%;
+    margin-left: 25%;
     background-color: #fff;
 }
 
@@ -311,9 +309,6 @@ footer {
 .projects .nextproject {
     margin-bottom: 150px;
 }
-
-
-
 
 
 
