@@ -238,18 +238,12 @@ footer {
     margin-left: 15%;
 }
 
-.projects .titlecontainer {
-    border:5px solid #fff;
-    width: 50%;
-    margin-left: 25%;
-    background-color: #fff;
-}
 
 .projects .title {
     font-weight: 100;
     font-size: 3.2em;
     font-family: "Helvetica Neue", "Lato", sans-serif;
-    color: #297ACC;
+    color: #fff;
 
     text-align: center;
     margin-top: 30px;
