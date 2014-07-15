@@ -74,7 +74,7 @@ footer {
 /* BUTTONS
 -------------------------------------------------- */
 
-.btn-skills {
+.btn-trifold {
     border-radius: 50%;
     display: inline-block;
     border: solid 6px #91C8FF;
@@ -82,7 +82,7 @@ footer {
     overflow: hidden;
 }
 
-.btn-skills:hover {
+.btn-trifold:hover {
     border-radius: 50%;
     border: solid 6px #297ACC;
 }
@@ -132,16 +132,16 @@ footer {
 
 
 
-/* SKILLS SECTION
+/* TRIFOLD SECTION
 -------------------------------------------------- */
 
-.skills {
+.trifold {
     padding: 80px 60px;
     color: #000;
     background: #91C8FF;
 }
 
-.skills h2 {
+.trifold h2 {
     font-weight: 100;
     font-size: 2em;
     font-family: "Helvetica Neue";
@@ -151,7 +151,7 @@ footer {
     margin-bottom: 30px;
 }
 
-.skills p {
+.trifold p {
     font-weight: 100;
     font-size: 1.25em;
     font-family: "Helvetica Neue";
@@ -315,60 +315,68 @@ footer {
 
 
 
-/* KNOWLEDGE SECTION
+/* SKILLS SECTION
 -------------------------------------------------- */
 
-.knowledge {
+.skills {
     background: #fff;
 }
 
-.knowledge headercontainer {
-    text-align: center;
-    width: 100%;
-}
-
-.knowledge h2 {
-    padding-top: 80px;
-    padding-bottom: 60px;
+#skill { 
+    list-style: none;
+    font: 35px "Helvetica Neue", sans-serif;
     font-weight: 100;
-    font-size: 5em;
-    font-family: "Helvetica Neue", "Montserrat", sans-serif;
-    text-align: center;
-    color: #fff;
+    width: 500px;
+    margin: 100px auto 0;
+    position: relative;
+    line-height: 0em;
+    padding: 30px 0;
 }
 
-.knowledge hr {
-    width: 70%;
-    margin-left: 15%;
+#skill li { 
+    margin-bottom:80px; 
+    background:#e9e5e2;
+    height:20px;
+    border-radius:10px;  
 }
 
-
-.knowledge .title {
-    font-weight: 100;
-    font-size: 3.2em;
-    font-family: "Helvetica Neue", "Lato", sans-serif;
-    color: #000;
-
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 55px;
+#skill li .name { 
+    position:relative; 
+    top:-25px;
 }
 
-.knowledge .desc {
-    font-weight: 100;
-    font-size: 1.55em;
-    font-family: "Helvetica Neue", "Lato", sans-serif;
-    color: #000;
-
-    text-align: center;
-    margin-bottom: 55px;
-
-    margin-left: 200px;
-    margin-right: 200px;
+.bar { 
+    height:20px; 
+    position:absolute;
+    border-radius:10px;
 }
 
+.java {
+    width:85%; 
+    -moz-animation:graphic-design 2s ease-out;
+    -webkit-animation:graphic-design 2s ease-out;
+    background-color: #66b3cc;
+}
 
+.html {
+    width:75%;
+    -moz-animation:html-css 2s ease-out;
+    -webkit-animation:html-css 2s ease-out;
+    background-color: #a1ce5b;
+}
 
+.css {
+    width:65%;
+    -moz-animation:jquery 2s ease-out;
+    -webkit-animation:jquery 2s ease-out;
+    background-color: #f0bb4b;
+}
 
+.javascript {
+    width:60%;
+    -moz-animation:wordpress 2s ease-out;
+    -webkit-animation:wordpress 2s ease-out;
+    background-color: #f674a4;
+}
 
 
