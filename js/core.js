@@ -1,5 +1,17 @@
 $(document).ready(function(){
 	
+
+	$(window).scroll(function(){
+		if ($(this).scrollTop() > 716) {
+			$('.scrollToTop').fadeIn();
+		} else {
+			$('.scrollToTop').fadeOut();
+		}
+	});
+
+
+
+
 	//Display button after scrolling down
 	$(window).scroll(function(){
 		if ($(this).scrollTop() > 716) {

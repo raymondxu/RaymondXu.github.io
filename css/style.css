@@ -14,9 +14,38 @@ padding: 0;
   text-align: center;
 }
 
+/* ROW CONTAINER
+-------------------------------------------------- */
 
+.row:before,
+.row:after {
+    content: "";
+    display: table;
+}
 
+.row:after {
+    clear:both;
+}
 
+/* COLUMNS
+-------------------------------------------------- */
+
+.columnedcontainer {
+    width: 100%;
+}
+
+.col {
+    float: left;
+    width:33.333333333333333333333%;
+    margin-left:0px;
+    margin-right:0px;
+    padding-left:0px;
+    padding-right:0px;
+}
+
+.clear {
+    clear:both;
+}
 
 /* NAVIGATION BAR
 -------------------------------------------------- */
@@ -43,7 +72,7 @@ padding: 0;
 #nav ul li {
     display: inline-block;
     font-family: "Helvetica Neue", sans-serif;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 100;
     color: #000;
 }
@@ -55,69 +84,11 @@ padding: 0;
 #nav ul li a,visited{
     color: #000;
     display: block;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-left: 75px;
-    padding-right: 75px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 83px;
+    padding-right: 83px;
     text-decoration: none; }
-
-
-
-
-
-
-
-/* HEADER
--------------------------------------------------- */
-
-header {
-    background: #fff;
-}
-
-header .headercontainer {
-    padding-top: 110px;
-    padding-bottom: 60px;
-    text-align: center;
-    width: 100%;
-}
-
-header .intro-text .title {
-    text-align: center;
-    font-size: 5em;
-    font-weight: 100;
-    font-family: "Helvetica Neue";
-}
-
-header .intro-text .desc {
-    text-align: center;
-    font-size: 1.6em;
-    font-weight: 100;
-    font-family: "Helvetica Neue";
-}
-
-header .navcontainer {
-    width: 0%;
-    float:left;
-    padding-top: 65px; /* depends on size of nav button */
-}
-
-
-
-
-/* FOOTER
--------------------------------------------------- */
-
-footer {
-    color: #000;
-    background: #fff;
-    padding-top: 30px;
-    padding-bottom: 20px;
-    text-align: center;
-    width: 100%;
-}
-
-
-
 
 
 
@@ -183,11 +154,54 @@ footer {
 
 
 
+
+
+
+
+/* HEADER
+-------------------------------------------------- */
+
+header {
+    background: #fff;
+}
+
+header .headercontainer {
+    padding-top: 120px;
+    padding-bottom: 80px;
+    text-align: center;
+    width: 100%;
+}
+
+header .intro-text .title {
+    text-align: center;
+    font-size: 5em;
+    font-weight: 100;
+    font-family: "Helvetica Neue";
+}
+
+header .intro-text .desc {
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: 100;
+    font-family: "Helvetica Neue";
+}
+
+header .navcontainer {
+    width: 0%;
+    float:left;
+    padding-top: 65px; /* depends on size of nav button */
+}
+
+
+
+
+
+
 /* TRIFOLD SECTION
 -------------------------------------------------- */
 
 .trifold {
-    padding: 60px 60px;
+    padding: 100px 60px;
     color: #000;
     background: #91C8FF;
 }
@@ -198,8 +212,7 @@ footer {
     font-family: "Helvetica Neue";
 
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 .trifold p {
@@ -216,42 +229,15 @@ footer {
 
 
 
-/* ROW CONTAINER
+/* ABOUT SECTION
 -------------------------------------------------- */
 
-.row:before,
-.row:after {
-    content: "";
-    display: table;
+.about {
+    padding: 100px 60px;
+    color: #000;
+    background-image: ;
 }
 
-.row:after {
-    clear:both;
-}
-
-
-
-
-
-/* COLUMNS
--------------------------------------------------- */
-
-.columnedcontainer {
-    width: 100%;
-}
-
-.col {
-    float: left;
-    width:33.333333333333333333333%;
-    margin-left:0px;
-    margin-right:0px;
-    padding-left:0px;
-    padding-right:0px;
-}
-
-.clear {
-    clear:both;
-}
 
 
 
