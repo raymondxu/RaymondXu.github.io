@@ -16,6 +16,58 @@ padding: 0;
 
 
 
+
+
+
+/* NAVIGATION BAR
+-------------------------------------------------- */
+
+#nav {
+    background-color: #FDFDFD;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+#nav-wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#nav ul li {
+    display: inline-block;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+    color: #000;
+}
+
+#nav ul li:hover {
+    background-color: #E0E0E0;
+}
+
+#nav ul li a,visited{
+    color: #000;
+    display: block;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 75px;
+    padding-right: 75px;
+    text-decoration: none; }
+
+
+
+
+
+
+
 /* HEADER
 -------------------------------------------------- */
 
@@ -24,7 +76,7 @@ header {
 }
 
 header .headercontainer {
-    padding-top: 65px;
+    padding-top: 115px;
     padding-bottom: 65px;
     text-align: center;
     width: 100%;
@@ -136,7 +188,7 @@ footer {
 -------------------------------------------------- */
 
 .trifold {
-    padding: 80px 60px;
+    padding: 60px 60px;
     color: #000;
     background: #91C8FF;
 }
