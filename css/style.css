@@ -10,10 +10,6 @@ margin: 0;
 padding: 0;
 }
 
-.text-center {
-  text-align: center;
-}
-
 /* ROW CONTAINER
 -------------------------------------------------- */
 
@@ -90,9 +86,6 @@ padding: 0;
     padding-right: 83px;
     text-decoration: none; }
 
-
-
-
 /* BUTTONS
 -------------------------------------------------- */
 
@@ -150,14 +143,6 @@ padding: 0;
     text-decoration:none;
 }
 
-
-
-
-
-
-
-
-
 /* HEADER
 -------------------------------------------------- */
 
@@ -192,11 +177,6 @@ header .navcontainer {
     padding-top: 65px; /* depends on size of nav button */
 }
 
-
-
-
-
-
 /* TRIFOLD SECTION
 -------------------------------------------------- */
 
@@ -225,28 +205,24 @@ header .navcontainer {
     text-align: center;
 }
 
-
-
-
-
 /* ABOUT SECTION
 -------------------------------------------------- */
 
 .about {
     padding: 100px 60px;
     color: #000;
-    background-image: ;
 }
 
-
-
-
-
-
-
-
-
-
+.about .school {
+    padding-top: 250px;
+    padding-bottom: 250px;
+    font-weight: 100;
+    font-size: 4em;
+    font-family: "Helvetica Neue", "Montserrat", sans-serif;
+    text-align: center;
+    color: #91C8FF;
+    
+}
 
 /* PROJECTS SECTION
 -------------------------------------------------- */
@@ -341,11 +317,6 @@ header .navcontainer {
     margin-bottom: 150px;
 }
 
-
-
-
-
-
 /* SKILLS SECTION
 -------------------------------------------------- */
 
@@ -366,7 +337,7 @@ header .navcontainer {
 
 .row .skillstitle hr {
     margin-top: 40px;
-    margin-bottom: 120px;
+    margin-bottom: 100px;
     width: 70%;
     margin-left: 15%;
 }
