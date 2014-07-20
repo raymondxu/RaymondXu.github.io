@@ -209,26 +209,26 @@ header .navcontainer {
 -------------------------------------------------- */
 
 .about {
-    padding: 100px 60px;
-    color: #000;
+    padding-bottom: 260px;
+    background-image:url(../images/columbia.png);
 }
 
 .about .school {
-    padding-top: 250px;
-    padding-bottom: 250px;
+    padding-top: 150px;
+    padding-bottom: 110px;
     font-weight: 100;
     font-size: 4em;
-    font-family: "Helvetica Neue", "Montserrat", sans-serif;
+    font-family: "Helvetica Neue", "Lato", sans-serif;
     text-align: center;
-    color: #91C8FF;
-    
+    color: #fff;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -px black;
 }
 
 /* PROJECTS SECTION
 -------------------------------------------------- */
 
 .projects {
-    background: #297ACC;
+    background: #F7F5F5;
 }
 
 .projects headercontainer {
@@ -240,10 +240,10 @@ header .navcontainer {
     padding-top: 80px;
     padding-bottom: 60px;
     font-weight: 100;
-    font-size: 5em;
-    font-family: "Helvetica Neue", "Montserrat", sans-serif;
+    font-size: 4em;
+    font-family: "Helvetica Neue", sans-serif;
     text-align: center;
-    color: #fff;
+    color: #000;
 }
 
 .projects hr {
@@ -255,8 +255,8 @@ header .navcontainer {
 .projects .title {
     font-weight: 100;
     font-size: 3.2em;
-    font-family: "Helvetica Neue", "Lato", sans-serif;
-    color: #fff;
+    font-family: "Helvetica Neue", sans-serif;
+    color: #000;
 
     text-align: center;
     margin-top: 30px;
@@ -266,8 +266,8 @@ header .navcontainer {
 .projects .desc {
     font-weight: 100;
     font-size: 1.55em;
-    font-family: "Helvetica Neue", "Lato", sans-serif;
-    color: #fff;
+    font-family: "Helvetica Neue", sans-serif;
+    color: #000;
 
     text-align: center;
     margin-bottom: 55px;
@@ -296,7 +296,7 @@ header .navcontainer {
     background-color: #fff;
     display: inline-block;
 
-    border:8px solid #297ACC;
+    border:2px solid #91C8FF;
 
     opacity:0;
     -moz-transition: opacity 2s; /* Firefox 4 */
@@ -306,7 +306,7 @@ header .navcontainer {
 }
 
 .projects .pinpointpic:hover {
-    border: solid 8px #91C8FF;
+    border: solid 2px #000;
 }
 
 .projects .firstproject {
