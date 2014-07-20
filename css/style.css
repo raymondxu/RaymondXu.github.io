@@ -211,6 +211,8 @@ header .navcontainer {
 .about {
     padding-bottom: 260px;
     background-image:url(../images/columbia.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .about .school {
@@ -228,7 +230,7 @@ header .navcontainer {
 -------------------------------------------------- */
 
 .projects {
-    background: #F7F5F5;
+    background: #fff;
 }
 
 .projects headercontainer {
