@@ -1,3 +1,15 @@
+/* COLORS USED
+--------------------------------------------------
+
+Light Blue: #91C8FF
+Purple: #4A4AB8
+Light Tan: #F1EDF1
+
+*/
+
+
+
+
 /* GENERAL ATTRIBUTES
 -------------------------------------------------- */
 
@@ -309,7 +321,7 @@ header .navcontainer {
 }
 
 .projects .pinpointpic:hover {
-    border: solid 2px #000;
+    border: solid 2px #91C8FF;
 }
 
 .projects .firstproject {
