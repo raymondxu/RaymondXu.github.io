@@ -419,13 +419,13 @@ header .navcontainer {
 -------------------------------------------------- */
 
 .black {
-    padding-bottom: 120px;
+    padding-bottom: 100px;
     background-color: #000;
 }
 
 .magic {
-    padding-bottom: 700px;
-    background-image:url(../images/magicmorse.png);
+    padding-top: 700px;
+    background-image:url(../images/magicmorse.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-color: #000;
