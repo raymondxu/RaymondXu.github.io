@@ -2,6 +2,7 @@
 --------------------------------------------------
 
 Light Blue: #91C8FF
+Dark Blue: #297ACC;
 Purple: #4A4AB8
 Light Tan: #F1EDF1
 
@@ -111,7 +112,7 @@ padding: 0;
 
 .btn-trifold:hover {
     border-radius: 50%;
-    border: solid 6px #4A4AB8;
+    border: solid 6px #297ACC;
 }
 
 .btn-nav {
@@ -321,7 +322,7 @@ header .navcontainer {
 }
 
 .projects .pinpointpic:hover {
-    border: solid 2px #91C8FF;
+    border: solid 2px #4A4AB8;
 }
 
 .projects .firstproject {
