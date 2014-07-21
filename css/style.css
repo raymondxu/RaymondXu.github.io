@@ -95,11 +95,6 @@ padding: 0;
     border: solid 6px #91C8FF;
     transition: all 1s ease-in-out;
     overflow: hidden;
-    opacity:0;
-    -moz-transition: opacity 2s; /* Firefox 4 */
-    -webkit-transition: opacity 2s; /* Safari and Chrome */
-    -o-transition: opacity 2s;
-    transition: opacity 2s;
 }
 
 .btn-trifold:hover {
@@ -407,4 +402,18 @@ header .navcontainer {
     background-color: #C44756;
 }
 
+/* MAGIC SECTION
+-------------------------------------------------- */
 
+.black {
+    padding-bottom: 120px;
+    background-color: #000;
+}
+
+.magic {
+    padding-bottom: 700px;
+    background-image:url(../images/magicmorse.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #000;
+}
