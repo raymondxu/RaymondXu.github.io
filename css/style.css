@@ -312,7 +312,7 @@ header .navcontainer {
     background-color: #fff;
     display: inline-block;
 
-    border:2px solid #91C8FF;
+    border: solid 4px #91C8FF;
 
     opacity:0;
     -moz-transition: opacity 2s; /* Firefox 4 */
@@ -322,7 +322,7 @@ header .navcontainer {
 }
 
 .projects .pinpointpic:hover {
-    border: solid 2px #4A4AB8;
+    border: solid 4px #4A4AB8;
 }
 
 .projects .firstproject {
