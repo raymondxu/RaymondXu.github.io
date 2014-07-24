@@ -90,14 +90,15 @@ padding: 0;
     background-color: #E0E0E0;
 }
 
-#nav ul li a,visited{
+#nav ul li a,visited {
     color: #000;
     display: block;
     padding-top: 8px;
     padding-bottom: 8px;
     padding-left: 83px;
     padding-right: 83px;
-    text-decoration: none; }
+    text-decoration: none;
+}
 
 /* BUTTONS
 -------------------------------------------------- */
@@ -430,3 +431,28 @@ header .navcontainer {
     background-size: 100%;
     background-color: #000;
 }
+
+/* CONTACT SECTION
+-------------------------------------------------- */
+
+.contact {
+    padding-top: 330px;
+    padding-bottom: 330px;
+    background-color: #F1EDF1;
+    font-weight: 100;
+    font-size: 5em;
+    font-family: "Helvetica Neue", sans-serif;
+}
+
+.contact .container {
+    background-color: #fff;
+    border: solid 2px #91C8FF;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.contact a {
+    text-decoration: none;
+    color: #297ACC;
+}
+
