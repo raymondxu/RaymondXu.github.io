@@ -446,9 +446,16 @@ header .navcontainer {
 
 .contact .container {
     background-color: #fff;
-    border: solid 2px #91C8FF;
+    border: solid 4px #297ACC;
     width: 50%;
     margin-left: 25%;
+    color: #297ACC;
+}
+
+.contact .container:hover {
+    background-color: #297ACC;
+    border: solid 4px #297ACC;
+    font-size: 1em;
 }
 
 .contact a {
@@ -456,3 +463,6 @@ header .navcontainer {
     color: #297ACC;
 }
 
+.contact a:hover {
+    color: #fff;
+}
