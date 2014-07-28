@@ -466,3 +466,18 @@ header .navcontainer {
 .contact a:hover {
     color: #fff;
 }
+
+/* FOOTER SECTION
+-------------------------------------------------- */
+
+.footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #C3C0C3;
+}
+
+.footer .copyright {
+    font-weight: 100;
+    font-size: 1.4em;
+    font-family: "Helvetica Neue", sans-serif;
+}
