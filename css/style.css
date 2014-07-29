@@ -223,7 +223,7 @@ header .navcontainer {
 -------------------------------------------------- */
 
 .about {
-    padding-bottom: 260px;
+    padding-bottom: 700px;
     background-image:url(../images/columbia.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -437,13 +437,13 @@ header .navcontainer {
 
 .medium {
     background-color: #fff;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .medium .desc {
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     font-weight: 100;
     font-size: 3em;
     font-family: "Helvetica Neue", sans-serif;
@@ -488,13 +488,13 @@ header .navcontainer {
 -------------------------------------------------- */
 
 .footer {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     background-color: #C3C0C3;
 }
 
 .footer .copyright {
     font-weight: 100;
-    font-size: 1.4em;
+    font-size: 1.3em;
     font-family: "Helvetica Neue", sans-serif;
 }
