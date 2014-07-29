@@ -432,6 +432,23 @@ header .navcontainer {
     background-color: #000;
 }
 
+/* MEDIUM SECTION
+-------------------------------------------------- */
+
+.medium {
+    background-color: #fff;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.medium .desc {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-weight: 100;
+    font-size: 3em;
+    font-family: "Helvetica Neue", sans-serif;
+}
+
 /* CONTACT SECTION
 -------------------------------------------------- */
 
