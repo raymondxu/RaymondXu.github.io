@@ -5,18 +5,34 @@ header {
     background: #fff;
 }
 
-header .headercontainer {
+header .indexheadercontainer {
     margin-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 106px;
     text-align: center;
     width: 100%;
 }
 
-header .intro-text .title {
+header .headercontainer {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+    width: 100%;
+}
+
+header .title {
     text-align: center;
     font-size: 5em;
     font-weight: 100;
     font-family: "Helvetica Neue";
+    padding-bottom: 15px;
+}
+
+header .sectiontext {
+    text-align: center;
+    font-size: 3em;
+    font-weight: 100;
+    font-family: "Helvetica Neue";
+    color: #297ACC;
 }
 
 header .navcontainer {
@@ -271,28 +287,20 @@ header .navcontainer {
 -------------------------------------------------- */
 
 .medium {
-    background-color: #fff;
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
-
-.medium .desc {
-    margin-top: 50px;
-    margin-bottom: 100px;
-    font-weight: 100;
-    font-size: 3em;
-    font-family: "Helvetica Neue", sans-serif;
+    background-color: #F1EDF1;
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 
 /* CONTACT SECTION
 -------------------------------------------------- */
 
 .contact {
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     background-color: #F1EDF1;
     font-weight: 100;
-    font-size: 5em;
+    font-size: 4em;
     font-family: "Helvetica Neue", sans-serif;
 }
 
@@ -369,6 +377,11 @@ header .navcontainer {
 
 body {
     overflow-x: hidden;
+}
+
+body a,visited {
+    text-decoration: none;
+    color: inherit;
 }
 
 * {
@@ -467,6 +480,14 @@ padding: 0;
 .btn-trifold:hover {
     border-radius: 50%;
     border: solid 6px #297ACC;
+}
+
+.btn-trifold-active {
+    border-radius: 50%;
+    display: inline-block;
+    border: solid 6px #297ACC;
+    transition: all .3s ease-in-out;
+    overflow: hidden;
 }
 
 .btn-nav {
