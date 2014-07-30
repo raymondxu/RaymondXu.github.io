@@ -1,162 +1,3 @@
-/* COLORS USED
---------------------------------------------------
-
-Light Blue: #91C8FF
-Dark Blue: #297ACC;
-Purple: #4A4AB8
-Light Tan: #F1EDF1
-
-*/
-
-
-
-
-/* GENERAL ATTRIBUTES
--------------------------------------------------- */
-
-body {
-    overflow-x: hidden;
-}
-
-* {
-margin: 0;
-padding: 0;
-}
-
-/* ROW CONTAINER
--------------------------------------------------- */
-
-.row:before,
-.row:after {
-    content: "";
-    display: table;
-}
-
-.row:after {
-    clear:both;
-}
-
-/* COLUMNS
--------------------------------------------------- */
-
-.columnedcontainer {
-    width: 100%;
-}
-
-.col {
-    float: left;
-    width:33.333333333333333333333%;
-    margin-left:0px;
-    margin-right:0px;
-    padding-left:0px;
-    padding-right:0px;
-}
-
-.clear {
-    clear:both;
-}
-
-/* NAVIGATION BAR
--------------------------------------------------- */
-
-#nav {
-    background-color: #FDFDFD;
-    position: fixed;
-    width: 100%;
-    top: 0;
-}
-
-#nav-wrapper {
-    width: 1200px;
-    margin: 0 auto;
-    text-align: left;
-}
-
-#nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-#nav ul li {
-    display: inline-block;
-    font-family: "Helvetica Neue", sans-serif;
-    font-size: 25px;
-    font-weight: 100;
-    color: #000;
-}
-
-#nav ul li:hover {
-    background-color: #E0E0E0;
-}
-
-#nav ul li a,visited {
-    color: #000;
-    display: block;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 83px;
-    padding-right: 83px;
-    text-decoration: none;
-}
-
-/* BUTTONS
--------------------------------------------------- */
-
-.btn-trifold {
-    border-radius: 50%;
-    display: inline-block;
-    border: solid 6px #91C8FF;
-    transition: all .3s ease-in-out;
-    overflow: hidden;
-}
-
-.btn-trifold:hover {
-    border-radius: 50%;
-    border: solid 6px #297ACC;
-}
-
-.btn-nav {
-    margin-left: 30px; /* MODIFY THIS FOR SPACING WITHOUT PUSHING THE TITLE TO THE RIGHT! */
-    border-radius: 50%;
-    display: inline-block;
-    border: solid 6px #fff;
-    transition: all .3s ease-in-out;
-    overflow: hidden;
-    width: 80px;
-    height: 80px;
-}
-
-.btn-nav:hover {
-    border: solid 6px #91C8FF;
-}
-
-.btn-nav-top {
-    border-radius: 50%;
-    display: inline-block;
-    border: solid 6px #297ACC;
-    transition: all .3s ease-in-out;
-    overflow: hidden;
-    width: 80px;
-    height: 80px;
-}
-
-.btn-nav-top:hover {
-    border: solid 6px #91C8FF;
-}
-
-.scrollToTop{
-    padding:8px; 
-    position:fixed;
-    top:58px; /* must be close to the header .navcontainer's padding-top */
-    left:22px;
-    display:none;
-}
-
-.scrollToTop:hover{
-    text-decoration:none;
-}
-
 /* HEADER
 -------------------------------------------------- */
 
@@ -174,13 +15,6 @@ header .headercontainer {
 header .intro-text .title {
     text-align: center;
     font-size: 5em;
-    font-weight: 100;
-    font-family: "Helvetica Neue";
-}
-
-header .intro-text .desc {
-    text-align: center;
-    font-size: 1.6em;
     font-weight: 100;
     font-family: "Helvetica Neue";
 }
@@ -253,12 +87,13 @@ header .navcontainer {
     width: 100%;
 }
 
-.projects h2 {
+.projects .header {
     padding-top: 80px;
     padding-bottom: 60px;
-    font-weight: 200;
+    font-weight: 400;
     font-size: 5em;
-    font-family: "Helvetica Neue", sans-serif;
+    font-style: normal;
+    font-family: "Montserrat", "Helvetica Neue", sans-serif;
     text-align: center;
     color: #000;
 }
@@ -270,9 +105,9 @@ header .navcontainer {
 
 
 .projects .title {
-    font-weight: 100;
+    font-weight: 400;
     font-size: 3.2em;
-    font-family: "Helvetica Neue", sans-serif;
+    font-family: "Lato", "Helvetica Neue", sans-serif;
     color: #000;
 
     text-align: center;
@@ -281,9 +116,9 @@ header .navcontainer {
 }
 
 .projects .desc {
-    font-weight: 100;
+    font-weight: 300;
     font-size: 1.55em;
-    font-family: "Helvetica Neue", sans-serif;
+    font-family: "Lato", "Helvetica Neue", sans-serif;
     color: #000;
 
     text-align: center;
@@ -498,3 +333,194 @@ header .navcontainer {
     font-size: 1.3em;
     font-family: "Helvetica Neue", sans-serif;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* GENERAL ATTRIBUTES
+-------------------------------------------------- */
+
+body {
+    overflow-x: hidden;
+}
+
+* {
+margin: 0;
+padding: 0;
+}
+
+/* ROW CONTAINER
+-------------------------------------------------- */
+
+.row:before,
+.row:after {
+    content: "";
+    display: table;
+}
+
+.row:after {
+    clear:both;
+}
+
+/* COLUMNS
+-------------------------------------------------- */
+
+.columnedcontainer {
+    width: 100%;
+}
+
+.col {
+    float: left;
+    width:33.333333333333333333333%;
+    margin-left:0px;
+    margin-right:0px;
+    padding-left:0px;
+    padding-right:0px;
+}
+
+.clear {
+    clear:both;
+}
+
+/* NAVIGATION BAR
+-------------------------------------------------- */
+
+#nav {
+    background-color: #FDFDFD;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+#nav-wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#nav ul li {
+    display: inline-block;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 25px;
+    font-weight: 100;
+    color: #000;
+}
+
+#nav ul li:hover {
+    background-color: #E0E0E0;
+}
+
+#nav ul li a,visited {
+    color: #000;
+    display: block;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 83px;
+    padding-right: 83px;
+    text-decoration: none;
+}
+
+/* BUTTONS
+-------------------------------------------------- */
+
+.btn-trifold {
+    border-radius: 50%;
+    display: inline-block;
+    border: solid 6px #91C8FF;
+    transition: all .3s ease-in-out;
+    overflow: hidden;
+}
+
+.btn-trifold:hover {
+    border-radius: 50%;
+    border: solid 6px #297ACC;
+}
+
+.btn-nav {
+    margin-left: 30px; /* MODIFY THIS FOR SPACING WITHOUT PUSHING THE TITLE TO THE RIGHT! */
+    border-radius: 50%;
+    display: inline-block;
+    border: solid 6px #fff;
+    transition: all .3s ease-in-out;
+    overflow: hidden;
+    width: 80px;
+    height: 80px;
+}
+
+.btn-nav:hover {
+    border: solid 6px #91C8FF;
+}
+
+.btn-nav-top {
+    border-radius: 50%;
+    display: inline-block;
+    border: solid 6px #297ACC;
+    transition: all .3s ease-in-out;
+    overflow: hidden;
+    width: 80px;
+    height: 80px;
+}
+
+.btn-nav-top:hover {
+    border: solid 6px #91C8FF;
+}
+
+.scrollToTop{
+    padding:8px; 
+    position:fixed;
+    top:58px; /* must be close to the header .navcontainer's padding-top */
+    left:22px;
+    display:none;
+}
+
+.scrollToTop:hover{
+    text-decoration:none;
+}
+
+
+
+
+
+
+/* COLORS USED
+--------------------------------------------------
+
+Light Blue: #91C8FF
+Dark Blue: #297ACC
+Purple: #4A4AB8
+Light Tan: #F1EDF1
+
+*/
