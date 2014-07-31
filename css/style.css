@@ -7,14 +7,14 @@ header {
 
 header .indexheadercontainer {
     margin-top: 100px;
-    margin-bottom: 106px;
+    margin-bottom: 88px;
     text-align: center;
     width: 100%;
 }
 
 header .headercontainer {
     margin-top: 100px;
-    margin-bottom: 50px;
+    margin-bottom: 32px;
     text-align: center;
     width: 100%;
 }
@@ -333,13 +333,14 @@ header .navcontainer {
 .footer {
     padding-top: 8px;
     padding-bottom: 8px;
-    background-color: #C3C0C3;
+    background-color: #000;
 }
 
 .footer .copyright {
     font-weight: 100;
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-family: "Helvetica Neue", sans-serif;
+    color: #fff;
 }
 
 
