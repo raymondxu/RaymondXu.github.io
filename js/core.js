@@ -1,6 +1,8 @@
+
+
+
 $(document).ready(function(){
 	
-
 	$(window).scroll(function(){
 		if ($(this).scrollTop() > 716) {
 			$('.scrollToTop').fadeIn();
@@ -8,8 +10,6 @@ $(document).ready(function(){
 			$('.scrollToTop').fadeOut();
 		}
 	});
-
-
 
 
 	//Display button after scrolling down
@@ -28,7 +28,6 @@ $(document).ready(function(){
 	});
 
 
-
 	//Smooth scroll to anchor
 	$(function() {
  		$('a[href*=#]:not([href=#])').click(function() {
@@ -42,6 +41,5 @@ $(document).ready(function(){
     		}
   		});
 	});
-
 
 });
