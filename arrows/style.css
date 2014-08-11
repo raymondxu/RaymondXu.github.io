@@ -1,0 +1,22 @@
+#image {
+    margin-top: 50px;
+    margin-bottom: 50px;
+	text-align: center;
+    border: 1px solid;
+    border-radius: 50%;
+}
+
+#outputDiv {
+	text-align: center;
+	font-size: 4em;
+    font-weight: 100;
+    font-family: "Helvetica Neue";
+}
+
+#timerDiv {
+    margin-top: 50px;
+	text-align: center;
+	font-size: 4em;
+    font-weight: 100;
+    font-family: "Helvetica Neue";
+}
