@@ -288,7 +288,7 @@ header .navcontainer {
 
 .medium {
     background-color: #F1EDF1;
-    padding-top: 70px;
+    padding-top: 50px;
     padding-bottom: 70px;
 }
 
@@ -325,7 +325,7 @@ header .navcontainer {
 
 .footer .copyright {
     font-weight: 200;
-    font-size: 1.2em;
+    font-size: 1em;
     font-family: "Helvetica Neue", sans-serif;
     color: #000;
 }
