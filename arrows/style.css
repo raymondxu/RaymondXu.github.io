@@ -1,22 +1,74 @@
 #image {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 	text-align: center;
     border: 1px solid;
     border-radius: 50%;
 }
 
-#outputDiv {
+#scoreDiv {
+    margin-bottom: 50px;
 	text-align: center;
-	font-size: 4em;
+	font-size: 3em;
     font-weight: 100;
     font-family: "Helvetica Neue";
 }
 
 #timerDiv {
-    margin-top: 50px;
+    margin-top: 40px;
 	text-align: center;
-	font-size: 4em;
+	font-size: 3em;
     font-weight: 100;
     font-family: "Helvetica Neue";
+}
+
+.instructions {
+    margin: 50px;
+    text-align: center;
+    font-size: 3em;
+    font-weight: 100;
+    font-family: "Helvetica Neue";
+}
+
+.instructions hr {
+    width: 50%;
+    text-align: center;
+}
+
+.instructions .icon {
+    margin: 25px;
+    border: 1px solid;
+    border-radius: 50%;
+    height: 25%;
+    display: inline;
+}
+
+.container {
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.button {
+    text-align: center;
+    font-size: 3em;
+    font-weight: 100;
+    font-family: "Helvetica Neue";
+    color: #297ACC;
+
+    border: 2px solid;
+    width: 50%;
+
+    float:left;
+    margin-left: 25%;
+    padding-top: 10px;
+    padding-bottom: 12px;
+}
+
+.button:hover {
+    color: #FFA347
+}
+
+a, visited {
+    text-decoration: none;
 }
