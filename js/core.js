@@ -1,31 +1,31 @@
+window.onload = function() {
+  	$("#studentcontainer").hide();
+    $("#programmercontainer").hide();
+    $("#magiciancontainer").hide();
+};
+
+$(".studentbutton").on("click", function() {
+  	$("#studentcontainer").show();
+    $("#programmercontainer").hide();
+    $("#magiciancontainer").hide();
+});
+
+$(".programmerbutton").on("click", function() {
+	$("#programmercontainer").show();
+  	$("#studentcontainer").hide();
+    $("#magiciancontainer").hide();
+});
+
+$(".magicianbutton").on("click", function() {
+	$("#magiciancontainer").show();
+  	$("#studentcontainer").hide();
+    $("#programmercontainer").hide();
+});
 
 
 
-$(document).ready(function(){
-	
-	$(window).scroll(function(){
-		if ($(this).scrollTop() > 716) {
-			$('.scrollToTop').fadeIn();
-		} else {
-			$('.scrollToTop').fadeOut();
-		}
-	});
 
 
-	//Display button after scrolling down
-	$(window).scroll(function(){
-		if ($(this).scrollTop() > 716) {
-			$('.scrollToTop').fadeIn();
-		} else {
-			$('.scrollToTop').fadeOut();
-		}
-	});
-	
-	//Click button to scroll to top
-	$('.scrollToTop').click(function() {
-		$('html, body').animate({scrollTop : 0},400);
-		return false;
-	});
 
 
 	//Smooth scroll to anchor
