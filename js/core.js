@@ -4,20 +4,20 @@ window.onload = function() {
     $("#magiciancontainer").hide();
 };
 
-$(".studentbutton").on("click", function() {
+$(".btn-trifold.studentbutton").on("click", function() {
   	$("#studentcontainer").show();
     $("#programmercontainer").hide();
     $("#magiciancontainer").hide();
 });
 
-$(".programmerbutton").on("click", function() {
-	$("#programmercontainer").show();
+$(".btn-trifold.programmerbutton").on("click", function() {
+    $("#programmercontainer").show();
   	$("#studentcontainer").hide();
     $("#magiciancontainer").hide();
 });
 
-$(".magicianbutton").on("click", function() {
-	$("#magiciancontainer").show();
+$(".btn-trifold.magicianbutton").on("click", function() {
+    $("#magiciancontainer").show();
   	$("#studentcontainer").hide();
     $("#programmercontainer").hide();
 });
@@ -41,5 +41,3 @@ $(".magicianbutton").on("click", function() {
     		}
   		});
 	});
-
-});
