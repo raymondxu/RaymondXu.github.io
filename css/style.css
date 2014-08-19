@@ -7,14 +7,7 @@ header {
 
 header .indexheadercontainer {
     margin-top: 100px;
-    margin-bottom: 85px;
-    text-align: center;
-    width: 100%;
-}
-
-header .headercontainer {
-    margin-top: 100px;
-    margin-bottom: 29px;
+    margin-bottom: 30px;
     text-align: center;
     width: 100%;
 }
@@ -28,17 +21,12 @@ header .title {
 }
 
 header .sectiontext {
+    margin-bottom: 0px;
     text-align: center;
     font-size: 3em;
     font-weight: 100;
     font-family: "Helvetica Neue";
     color: #297ACC;
-}
-
-header .navcontainer {
-    width: 0%;
-    float:left;
-    padding-top: 65px; /* depends on size of nav button */
 }
 
 /* TRIFOLD SECTION
