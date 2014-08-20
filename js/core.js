@@ -4,21 +4,21 @@ window.onload = function() {
     $("#magiciancontainer").hide();
 };
 
-$(".btn-trifold.studentbutton").on("click", function() {
+$(".trifoldbutton.studentbutton").on("click", function() {
   	$("#studentcontainer").show();
     $("#programmercontainer").hide();
     $("#magiciancontainer").hide();
     $(".animated.fadeInUp.sectiontext").html("Student");
 });
 
-$(".btn-trifold.programmerbutton").on("click", function() {
+$(".trifoldbutton.programmerbutton").on("click", function() {
     $("#programmercontainer").show();
   	$("#studentcontainer").hide();
     $("#magiciancontainer").hide();
     $(".animated.fadeInUp.sectiontext").html("Programmer");
 });
 
-$(".btn-trifold.magicianbutton").on("click", function() {
+$(".trifoldbutton.magicianbutton").on("click", function() {
     $("#magiciancontainer").show();
   	$("#studentcontainer").hide();
     $("#programmercontainer").hide();

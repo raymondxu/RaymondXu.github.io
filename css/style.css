@@ -135,7 +135,9 @@ header .sectiontext {
 .projects .pic {
     padding: 10px;
     background-color: #fff;
-    display: inline-block;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 
     opacity:0;
     -moz-transition: opacity 2s; /* Firefox 4 */
@@ -150,7 +152,9 @@ header .sectiontext {
 
     padding: 8px;
     background-color: #fff;
-    display: inline-block;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 
     border: solid 4px #91C8FF;
 
@@ -278,6 +282,7 @@ header .sectiontext {
     background-color: #F1EDF1;
     padding-top: 50px;
     padding-bottom: 70px;
+    text-align: center;
 }
 
 /* CONTACT SECTION
@@ -288,8 +293,13 @@ header .sectiontext {
     padding-bottom: 10px;
 }
 
+.contact .container {
+    text-align: center;
+}
+
 .contact .mediabutton {
     border-radius: 50%;
+    display: inline-block;
 }
 
 .contact .mediabutton:hover {
@@ -312,6 +322,7 @@ header .sectiontext {
 }
 
 .footer .copyright {
+    text-align: center;
     font-weight: 200;
     font-size: 1em;
     font-family: "Helvetica Neue", sans-serif;
@@ -395,6 +406,7 @@ padding: 0;
     margin-right:0px;
     padding-left:0px;
     padding-right:0px;
+    text-align: center;
 }
 
 .clear {
@@ -448,68 +460,25 @@ padding: 0;
 /* BUTTONS
 -------------------------------------------------- */
 
-.btn-trifold {
+.trifoldbutton {
     border-radius: 50%;
     display: inline-block;
     border: solid 6px #91C8FF;
-    transition: all .3s ease-in-out;
     overflow: hidden;
 }
 
-.btn-trifold:hover {
+.trifoldbutton:hover {
     border-radius: 50%;
     border: solid 6px #297ACC;
 }
 
-.btn-trifold-active {
-    border-radius: 50%;
-    display: inline-block;
-    border: solid 6px #297ACC;
-    transition: all .3s ease-in-out;
-    overflow: hidden;
-}
-
-.btn-nav {
-    margin-left: 30px; /* MODIFY THIS FOR SPACING WITHOUT PUSHING THE TITLE TO THE RIGHT! */
-    border-radius: 50%;
-    display: inline-block;
-    border: solid 6px #fff;
-    transition: all .3s ease-in-out;
-    overflow: hidden;
-    width: 80px;
-    height: 80px;
-}
-
-.btn-nav:hover {
-    border: solid 6px #91C8FF;
-}
-
-.btn-nav-top {
+.trifoldbutton-active {
     border-radius: 50%;
     display: inline-block;
     border: solid 6px #297ACC;
     transition: all .3s ease-in-out;
     overflow: hidden;
-    width: 80px;
-    height: 80px;
 }
-
-.btn-nav-top:hover {
-    border: solid 6px #91C8FF;
-}
-
-.scrollToTop{
-    padding:8px; 
-    position:fixed;
-    top:58px; /* must be close to the header .navcontainer's padding-top */
-    left:22px;
-    display:none;
-}
-
-.scrollToTop:hover{
-    text-decoration:none;
-}
-
 
 
 
