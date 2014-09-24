@@ -1,1 +1,1 @@
-#####This is my personal website that I've been using to explore HTML, CSS, and Javascript. As a result, it is perpetually a work in progress and may have functionality bugs or lack responsiveness. Thanks.
+#####This is my personal website that I've been building to explore HTML, CSS, and Javascript. As a result, please view it as a work in progress rather than a final product.
