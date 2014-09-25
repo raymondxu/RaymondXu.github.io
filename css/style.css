@@ -166,7 +166,7 @@ header .sectiontext {
 }
 
 .projects .pinpointpic:hover {
-    border: solid 4px #4A4AB8;
+    /*border: solid 4px #4A4AB8;*/
 }
 
 .projects .firstproject {
