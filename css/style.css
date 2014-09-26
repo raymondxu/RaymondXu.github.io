@@ -50,6 +50,13 @@ header .sectiontext {
     background: #91C8FF;
 }
 
+@media (max-width: 730px) {
+.trifold {
+    padding-top: 30px;
+    padding-bottom: 0px;
+}
+}
+
 .trifold h2 {
     font-weight: 100;
     font-size: 2em;
@@ -57,6 +64,12 @@ header .sectiontext {
 
     text-align: center;
     margin-top: 30px;
+}
+
+@media (max-width: 730px) {
+.trifold h2 {
+    margin-top: 0px;
+}
 }
 
 .trifold p {
@@ -79,6 +92,26 @@ header .sectiontext {
     background-size: 100%;
     background-color: #F1EDF1;
 }
+
+@media (max-width: 750px) {
+.about {
+    padding-bottom: 450px;
+}
+}
+
+@media (max-width: 600px) {
+.about {
+    padding-bottom: 350px;
+}
+}
+
+@media (max-width: 400px) {
+.about {
+    padding-bottom: 250px;
+}
+}
+
+
 
 /* PROJECTS SECTION
 -------------------------------------------------- */
