@@ -12,12 +12,24 @@ header .indexheadercontainer {
     width: 100%;
 }
 
+@media (min-width: 450px) {
 header .title {
     text-align: center;
     font-size: 5em;
-    font-weight: 100;
+    font-weight: 200;
     font-family: "Helvetica Neue";
     padding-bottom: 15px;
+}
+}
+
+@media (max-width: 450px) {
+header .title {
+    text-align: center;
+    font-size: 4em;
+    font-weight: 200;
+    font-family: "Helvetica Neue";
+    padding-bottom: 15px;
+}
 }
 
 header .sectiontext {
@@ -66,17 +78,6 @@ header .sectiontext {
     background-repeat: no-repeat;
     background-size: 100%;
     background-color: #F1EDF1;
-}
-
-.about .school {
-    padding-top: 150px;
-    padding-bottom: 110px;
-    font-weight: 100;
-    font-size: 4em;
-    font-family: "Helvetica Neue", "Lato", sans-serif;
-    text-align: center;
-    color: #fff;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -px black;
 }
 
 /* PROJECTS SECTION
@@ -399,6 +400,7 @@ padding: 0;
     width: 100%;
 }
 
+@media (min-width: 730px) {
 .col {
     float: left;
     width:33.333333333333333333333333%;
@@ -409,6 +411,21 @@ padding: 0;
     text-align: center;
     min-width: 200px;
 }
+}
+
+@media (max-width: 730px) {
+.col {
+    width:33.333333333333333333333333%;
+    margin-left:auto;
+    margin-right:auto;
+    padding-left:0px;
+    padding-right:0px;
+    margin-bottom: 50px;
+    text-align: center;
+    min-width: 200px;
+}
+}
+
 
 .clear {
     clear:both;
