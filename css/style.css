@@ -190,7 +190,7 @@ header .sectiontext {
     margin-left: auto;
     margin-right: auto;
 
-    border: solid 4px #91C8FF;
+    /*border: solid 4px #91C8FF;*/
 
     opacity:0;
     -moz-transition: opacity 2s; /* Firefox 4 */
