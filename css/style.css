@@ -82,242 +82,46 @@ header .sectiontext {
     text-align: center;
 }
 
-/* ABOUT SECTION
--------------------------------------------------- */
-
-.about {
-    padding-bottom: 730px;
-    background-image:url(../images/columbia.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-color: #F1EDF1;
-}
-
-@media (max-width: 750px) {
-.about {
-    padding-bottom: 450px;
-}
-}
-
-@media (max-width: 600px) {
-.about {
-    padding-bottom: 350px;
-}
-}
-
-@media (max-width: 400px) {
-.about {
-    padding-bottom: 250px;
-}
-}
 
 
-
-/* PROJECTS SECTION
--------------------------------------------------- */
-
-.projects {
-    background: #F1EDF1;
-}
-
-.projects headercontainer {
-    text-align: center;
-    width: 100%;
-}
-
-.projects .header {
-    padding-top: 80px;
-    padding-bottom: 60px;
+.arrows {
+    padding-top: 100px;
+    background-color: #AA3939;
+    height: 300px;
+    color: #fff;
     font-weight: 400;
-    font-size: 5em;
-    font-style: normal;
-    font-family: "Helvetica Neue", sans-serif;
-    text-align: center;
-    color: #000;
+    font-family: "Montserrat","Helvetica Neue";
 }
 
-.projects hr {
-    width: 70%;
-    margin-left: 15%;
-}
-
-
-.projects .title {
+.arrowstitle {
     font-weight: 400;
-    font-size: 3.2em;
-    font-family: "Lato", "Helvetica Neue", sans-serif;
-    color: #000;
-
+    font-family: "Montserrat","Helvetica Neue";
+    margin-bottom: 75px;
+    font-size: 3em;
     text-align: center;
-    margin-top: 30px;
-    margin-bottom: 55px;
 }
 
-.projects .desc {
-    font-weight: 300;
-    font-size: 1.55em;
-    font-family: "Lato", "Helvetica Neue", sans-serif;
-    color: #000;
-
+.arrowsbutton {
+    background-color: #AA3939;
     text-align: center;
-    margin-bottom: 55px;
+    font-size: 2.1em;
+    border: 2px solid;
+    border-color: #fff;
 
-    margin-left: 200px;
-    margin-right: 200px;
-}
-
-.projects .pic {
-    padding: 10px;
-    background-color: #fff;
-    display: block;
+    width: 30%;
     margin-left: auto;
     margin-right: auto;
-
-    opacity:0;
-    -moz-transition: opacity 2s; /* Firefox 4 */
-    -webkit-transition: opacity 2s; /* Safari and Chrome */
-    -o-transition: opacity 2s;
-    transition: opacity 2s;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 15px;
 }
 
-.projects .pinpointpic {
-    height: 50%;
-    width: 50%;
-
-    padding: 8px;
+.arrowsbutton:hover {
     background-color: #fff;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-
-    /*border: solid 4px #91C8FF;*/
-
-    opacity:0;
-    -moz-transition: opacity 2s; /* Firefox 4 */
-    -webkit-transition: opacity 2s; /* Safari and Chrome */
-    -o-transition: opacity 2s;
-    transition: opacity 2s;
+    color: #AA3939;
+    border-color: #fff;
 }
 
-.projects .pinpointpic:hover {
-    /*border: solid 4px #4A4AB8;*/
-}
-
-.projects .firstproject {
-    margin-bottom: 80px;
-}
-
-.projects .nextproject {
-    margin-bottom: 150px;
-}
-
-/* SKILLS SECTION
--------------------------------------------------- */
-
-.skills {
-    background: #fff;
-}
-
-.row .skillstitle {
-    font-weight: 100;
-    font-size: 4.2em;
-    font-family: "Helvetica Neue", "Lato", sans-serif;
-    color: #000;
-
-    text-align: center;
-    margin-top: 80px;
-    margin-bottom: 25px;
-}
-
-.row .skillstitle hr {
-    margin-top: 40px;
-    margin-bottom: 100px;
-    width: 70%;
-    margin-left: 15%;
-}
-
-#skill { 
-    list-style: none;
-    font: 35px "Helvetica Neue", sans-serif;
-    font-weight: 100;
-    width: 500px;
-    margin: 100px auto 0;
-    position: relative;
-    line-height: 0em;
-    padding: 0 0;
-}
-
-#skill li { 
-    margin-bottom:80px; 
-    background:#e9e5e2;
-    height:20px;
-    border-radius:10px;  
-}
-
-#skill li .name { 
-    position:relative; 
-    top:-25px;
-}
-
-.bar { 
-    height:20px; 
-    position:absolute;
-    border-radius:10px;
-}
-
-.java {
-    width:85%; 
-    -moz-animation:graphic-design 2s ease-out;
-    -webkit-animation:graphic-design 2s ease-out;
-    background-color: #66b3cc;
-}
-
-.html {
-    width:75%;
-    -moz-animation:html-css 2s ease-out;
-    -webkit-animation:html-css 2s ease-out;
-    background-color: #a1ce5b;
-}
-
-.css {
-    width:65%;
-    -moz-animation:jquery 2s ease-out;
-    -webkit-animation:jquery 2s ease-out;
-    background-color: #f0bb4b;
-}
-
-.javascript {
-    width:60%;
-    -moz-animation:wordpress 2s ease-out;
-    -webkit-animation:wordpress 2s ease-out;
-    background-color: #C44756;
-}
-
-/* MAGIC SECTION
--------------------------------------------------- */
-
-.black {
-    padding-bottom: 100px;
-    background-color: #000;
-}
-
-.magic {
-    padding-top: 700px;
-    background-image:url(../images/magicmorse.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-color: #000;
-}
-
-/* MEDIUM SECTION
--------------------------------------------------- */
-
-.medium {
-    background-color: #F1EDF1;
-    padding-top: 50px;
-    padding-bottom: 70px;
-    text-align: center;
-}
 
 /* CONTACT SECTION
 -------------------------------------------------- */
