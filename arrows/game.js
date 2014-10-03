@@ -59,12 +59,12 @@ function processLeft()
 
 function displayScore()
 {
-	scoreDiv.innerHTML = "score: "+ score;
+	scoreDiv.innerHTML = "SCORE: "+ score;
 }
 
 function displayTime()
 {
-	timerDiv.innerHTML = "time: " + timer;
+	timerDiv.innerHTML = "TIME: " + timer;
 }
 
 function play()

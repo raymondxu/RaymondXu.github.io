@@ -12,22 +12,20 @@ header .indexheadercontainer {
     width: 100%;
 }
 
-@media (min-width: 450px) {
 header .title {
     text-align: center;
-    font-size: 5em;
-    font-weight: 200;
-    font-family: "Helvetica Neue";
+    font-size: 4.5em;
+    font-weight: 100;
+    font-family: "Montserrat", "Helvetica Neue";
     padding-bottom: 15px;
 }
-}
 
-@media (max-width: 450px) {
+@media (max-width: 480px) {
 header .title {
     text-align: center;
-    font-size: 4em;
-    font-weight: 200;
-    font-family: "Helvetica Neue";
+    font-size: 3.5em;
+    font-weight: 100;
+    font-family: "Montserrat", "Helvetica Neue";
     padding-bottom: 15px;
 }
 }
@@ -37,7 +35,7 @@ header .sectiontext {
     text-align: center;
     font-size: 3em;
     font-weight: 100;
-    font-family: "Helvetica Neue";
+    font-family: "Montserrat", "Helvetica Neue";
     color: #297ACC;
 }
 
@@ -58,7 +56,7 @@ header .sectiontext {
 }
 
 .trifold h2 {
-    font-weight: 100;
+    font-weight: 200;
     font-size: 2em;
     font-family: "Helvetica Neue";
 
@@ -85,18 +83,20 @@ header .sectiontext {
 
 
 .arrows {
-    padding-top: 100px;
+    padding-top: 70px;
+    padding-bottom: 40px;
     background-color: #AA3939;
     height: 300px;
     color: #fff;
     font-weight: 400;
     font-family: "Montserrat","Helvetica Neue";
+    text-align: center;
 }
 
 .arrowstitle {
     font-weight: 400;
     font-family: "Montserrat","Helvetica Neue";
-    margin-bottom: 75px;
+    margin-bottom: 65px;
     font-size: 3em;
     text-align: center;
 }
@@ -108,11 +108,12 @@ header .sectiontext {
     border: 2px solid;
     border-color: #fff;
 
-    width: 30%;
     margin-left: auto;
     margin-right: auto;
     padding-top: 10px;
     padding-bottom: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
     border-radius: 15px;
 }
 
@@ -121,6 +122,48 @@ header .sectiontext {
     color: #AA3939;
     border-color: #fff;
 }
+
+
+
+
+
+*{ margin: 0; padding: 0;}
+
+.arrows {
+    overflow: hidden;
+}
+
+
+/*Time to finalise the cloud shape*/
+.cloud {
+    width: 80px; height: 0px;
+    background: #fff;
+    position: relative; 
+    border-right: 50px solid white;
+    border-bottom: 50px solid white;
+    margin-bottom: 50px;
+}
+
+/*Time to animate*/
+.x1 {
+    -webkit-animation: moveclouds 7s linear infinite;
+    -moz-animation: moveclouds 7s linear infinite;
+    -o-animation: moveclouds 7s linear infinite;
+}
+
+@-webkit-keyframes moveclouds {
+    0% {margin-left: 1400px;}
+    100% {margin-left: -200px;}
+}
+@-moz-keyframes moveclouds {
+    0% {margin-left: 1400px;}
+    100% {margin-left: -200px;}
+}
+@-o-keyframes moveclouds {
+    0% {margin-left: 1400px;}
+    100% {margin-left: -200px;}
+}
+
 
 
 /* CONTACT SECTION
