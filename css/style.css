@@ -139,6 +139,13 @@ header .sectiontext {
     color: #A37ACC;
 }
 
+.medium {
+    background-color: #FF9933;
+}
+
+.mediumbutton:hover {
+    color: #FF9933;
+}
 
 
 
