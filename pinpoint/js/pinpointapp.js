@@ -225,15 +225,29 @@ var ngAddApp = angular.module("ngAddApp", []);
       $scope.go = function() {
 
         distancesArray = [];
-        originsArray = new Array($scope.items1.length);
-        destinationsArray = new Array($scope.items2.length);
+        len1 = 0;
+        len2 = 0;
+
+        for(var j1 in $scope.items1) {
+            if($scope.items1[j1].text != "")
+              len1++;
+        }
+        for(var j2 in $scope.items2) {
+            if($scope.items2[j2].text != "")
+              len2++;
+        }
+
+        originsArray = new Array(len1);
+        destinationsArray = new Array(len2);
 
         for(var i1 in $scope.items1) {
-          originsArray[i1] = $scope.items1[i1].text;
+          if($scope.items1[i1].text != "")
+            originsArray[i1] = $scope.items1[i1].text;
         }
 
         for(var i2 in $scope.items2) {
-          destinationsArray[i2] = $scope.items2[i2].text;
+          if($scope.items2[i2].text != "")
+            destinationsArray[i2] = $scope.items2[i2].text;
         }
 
 

@@ -82,10 +82,12 @@ header .sectiontext {
 
 
 
-.arrows {
-    padding-top: 70px;
-    padding-bottom: 40px;
-    background-color: #AA3939;
+/* BANNERS
+-------------------------------------------------- */
+
+.banner {
+    padding-top: 120px;
+    padding-bottom: 0px;
     height: 300px;
     color: #fff;
     font-weight: 400;
@@ -93,7 +95,7 @@ header .sectiontext {
     text-align: center;
 }
 
-.arrowstitle {
+.bannertitle {
     font-weight: 400;
     font-family: "Montserrat","Helvetica Neue";
     margin-bottom: 65px;
@@ -101,8 +103,7 @@ header .sectiontext {
     text-align: center;
 }
 
-.arrowsbutton {
-    background-color: #AA3939;
+.bannerbutton {
     text-align: center;
     font-size: 2.1em;
     border: 2px solid;
@@ -117,52 +118,27 @@ header .sectiontext {
     border-radius: 15px;
 }
 
-.arrowsbutton:hover {
+.bannerbutton:hover {
     background-color: #fff;
-    color: #AA3939;
     border-color: #fff;
 }
 
-
-
-
-
-*{ margin: 0; padding: 0;}
-
 .arrows {
-    overflow: hidden;
+    background-color: #AA3939;
 }
 
-
-/*Time to finalise the cloud shape*/
-.cloud {
-    width: 80px; height: 0px;
-    background: #fff;
-    position: relative; 
-    border-right: 50px solid white;
-    border-bottom: 50px solid white;
-    margin-bottom: 50px;
+.arrowsbutton:hover {
+    color: #AA3939;
 }
 
-/*Time to animate*/
-.x1 {
-    -webkit-animation: moveclouds 7s linear infinite;
-    -moz-animation: moveclouds 7s linear infinite;
-    -o-animation: moveclouds 7s linear infinite;
+.pinpoint {
+    background-color: #A37ACC;
 }
 
-@-webkit-keyframes moveclouds {
-    0% {margin-left: 1400px;}
-    100% {margin-left: -200px;}
+.pinpointbutton:hover {
+    color: #A37ACC;
 }
-@-moz-keyframes moveclouds {
-    0% {margin-left: 1400px;}
-    100% {margin-left: -200px;}
-}
-@-o-keyframes moveclouds {
-    0% {margin-left: 1400px;}
-    100% {margin-left: -200px;}
-}
+
 
 
 
