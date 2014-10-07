@@ -113,8 +113,8 @@ header .sectiontext {
     margin-right: auto;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 10%;
+    padding-right: 10%;
     border-radius: 15px;
 }
 
