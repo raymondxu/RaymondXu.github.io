@@ -1,14 +1,75 @@
-/* HEADER
+/* PARALLAX LANDING PAGE
 -------------------------------------------------- */
 
+
 #bg .title {
-    padding-top: 100px;
+    padding-top: 110px;
     text-align: center;
     font-size: 2.7em;
     font-weight: 100;
     color: white;
     font-family: "Helvetica Neue", sans-serif;
 }
+
+@media (max-width: 769px) {
+    #bg .title {
+        padding-top: 110px;
+        text-align: center;
+        font-size: 2em;
+        font-weight: 100;
+        color: white;
+        font-family: "Helvetica Neue", sans-serif;
+    }
+}
+
+.slide {
+  position: relative;
+  min-height: 100vh;
+  width: 100vw;
+  transform-style: inherit;
+}
+
+.slide:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left:0;
+  right:0;
+}
+
+.slide, .slide:before {
+  background: 50% 50% / cover;  
+}
+
+#bg {
+  background-image: url("../images/stardust.png");
+  background-attachment: fixed;
+}
+
+
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body { 
+  margin:0;
+  padding:0;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: "Montserrat";
+}
+
+
+
+
+
+
+
 
 /* TRIFOLD SECTION
 -------------------------------------------------- */
@@ -166,60 +227,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-/* PARALLAX LANDING PAGE
--------------------------------------------------- */
-
-
-.slide {
-  position: relative;
-  min-height: 100vh;
-  width: 100vw;
-  transform-style: inherit;
-}
-
-.slide:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left:0;
-  right:0;
-}
-
-.slide, .slide:before {
-  background: 50% 50% / cover;  
-}
-
-#bg {
-  background-image: url("../images/stardust.png");
-  background-attachment: fixed;
-}
-
-
-html {
-  height: 100%;
-  overflow: hidden;
-}
-
-body { 
-  margin:0;
-  padding:0;
-  perspective: 1px;
-  transform-style: preserve-3d;
-  height: 100%;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  font-family: "Montserrat";
-}
 
 
 
