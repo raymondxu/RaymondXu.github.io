@@ -5,7 +5,7 @@
 #bg .title {
     padding-top: 110px;
     text-align: center;
-    font-size: 2.7em;
+    font-size: 2.4em;
     font-weight: 100;
     color: white;
     font-family: "Helvetica Neue", sans-serif;
@@ -23,28 +23,46 @@
 }
 
 .slide {
-  position: relative;
-  min-height: 100vh;
-  width: 100vw;
-  transform-style: inherit;
+    position: relative;
+    min-height: 100vh;
+    width: 100vw;
+    transform-style: inherit;
 }
 
 .slide:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left:0;
-  right:0;
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left:0;
+    right:0;
 }
 
 .slide, .slide:before {
-  background: 50% 50% / cover;  
+    background: 50% 50% / cover;  
 }
 
 #bg {
-  background-image: url("../images/stardust.png");
-  background-attachment: fixed;
+    background-image: url("../images/stardust.png");
+    background-attachment: fixed;
+}
+
+.smallslide {
+    min-height: 70vw;
+}
+
+#columbia {
+    background-image: url("../images/columbia.jpg");
+    background-attachment: fixed;
+}
+
+#columbia .title {
+    padding-top: 110px;
+    text-align: center;
+    font-size: 4em;
+    font-weight: 100;
+    color: white;
+    font-family: "Helvetica Neue", sans-serif;
 }
 
 
@@ -75,41 +93,39 @@ body {
 -------------------------------------------------- */
 
 .trifold {
-    padding: 100px 60px;
+    padding-top: 130px;
+    padding-bottom: 210px;
+    padding-left: 40px;
+    padding-right: 40px;
     color: #000;
     background: #91C8FF;
 }
 
-@media (max-width: 730px) {
-.trifold {
-    padding-top: 30px;
-    padding-bottom: 0px;
-}
-}
-
 .trifold h2 {
     font-weight: 100;
-    font-size: 2em;
+    font-size: 2.2em;
     font-family: "Helvetica Neue", sans-serif;
-
     text-align: center;
     margin-top: 30px;
 }
 
-@media (max-width: 730px) {
-.trifold h2 {
-    margin-top: 0px;
-}
-}
-
 .trifold p {
+    color: #222;
     font-weight: 100;
-    font-size: 1.25em;
+    font-size: 1.5em;
     font-family: "Helvetica Neue";
-
-    margin-left: 50px;
-    margin-right: 50px;
     text-align: center;
+    margin: 70px 35px;
+}
+
+@media (max-width: 769px) {
+    .trifold p {
+        font-weight: 100;
+        font-size: 1.5em;
+        font-family: "Helvetica Neue";
+        text-align: center;
+        margin: 70px 0px;
+    }
 }
 
 
@@ -274,100 +290,49 @@ margin: 0;
 padding: 0;
 }
 
-/* ROW CONTAINER
--------------------------------------------------- */
 
-.row:before,
-.row:after {
-    content: "";
-    display: table;
-}
 
-.row:after {
-    clear:both;
-}
 
 /* COLUMNS
 -------------------------------------------------- */
 
 .columnedcontainer {
     width: 100%;
+    min-height: 300px;
+    padding: 50px 0px;
 }
 
-@media (min-width: 730px) {
+@media (min-width: 769px) {
 .col {
     float: left;
-    width:33.333333333333333333333333%;
-    margin-left:0px;
-    margin-right:0px;
-    padding-left:0px;
-    padding-right:0px;
+    width: 33.333333333333333333333333%;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
     text-align: center;
     min-width: 200px;
 }
 }
 
-@media (max-width: 730px) {
+@media (max-width: 769px) {
 .col {
-    width:33.333333333333333333333333%;
-    margin-left:auto;
-    margin-right:auto;
-    padding-left:0px;
-    padding-right:0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0px;
+    padding-right: 0px;
     margin-bottom: 50px;
     text-align: center;
     min-width: 200px;
 }
 }
 
-
 .clear {
     clear:both;
 }
 
-/* NAVIGATION BAR
--------------------------------------------------- */
 
-#nav {
-    background-color: #FDFDFD;
-    position: fixed;
-    width: 100%;
-    top: 0;
-}
 
-#nav-wrapper {
-    width: 1200px;
-    margin: 0 auto;
-    text-align: left;
-}
-
-#nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-#nav ul li {
-    display: inline-block;
-    font-family: "Helvetica Neue", sans-serif;
-    font-size: 25px;
-    font-weight: 100;
-    color: #000;
-}
-
-#nav ul li:hover {
-    background-color: #E0E0E0;
-}
-
-#nav ul li a,visited {
-    color: #000;
-    display: block;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 83px;
-    padding-right: 83px;
-    text-decoration: none;
-}
 
 /* BUTTONS
 -------------------------------------------------- */
@@ -379,10 +344,10 @@ padding: 0;
     overflow: hidden;
 }
 
-.trifoldbutton:hover {
+/*.trifoldbutton:hover {
     border-radius: 50%;
     border: solid 6px #297ACC;
-}
+}*/
 
 .trifoldbutton-active {
     border-radius: 50%;
