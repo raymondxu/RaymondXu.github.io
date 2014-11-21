@@ -47,8 +47,18 @@
     background-attachment: fixed;
 }
 
+#githubbanner {
+    background-image: url("../images/stardust.png");
+    background-attachment: fixed;
+    text-align: center;
+}
+
 .smallslide {
     min-height: 70vw;
+}
+
+.tinyslide {
+    min-height: 40vw;
 }
 
 #columbia {
@@ -79,22 +89,6 @@
         font-family: "Helvetica Neue", sans-serif;
     }
 }
-
-#blog {
-    background-image: url("../images/blog.jpg");
-    background-attachment: fixed;
-}
-
-#blog .title {
-    padding-top: 300px;
-    text-align: center;
-    font-size: 4em;
-    font-weight: 100;
-    color: white;
-    font-family: "Open Sans", sans-serif;
-}
-
-
 
 html {
   height: 100%;
@@ -164,8 +158,8 @@ body {
 -------------------------------------------------- */
 
 .banner {
-    padding-top: 120px;
-    padding-bottom: 0px;
+    padding-top: 150px;
+    padding-bottom: 30px;
     height: 300px;
     color: #fff;
     font-weight: 400;
@@ -225,6 +219,14 @@ body {
     color: #FF9933;
 }
 
+.githubbutton {
+    margin-top: 120px;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+    display: inline-block;
+    vertical-align: center;
+}
 
 
 /* CONTACT SECTION
