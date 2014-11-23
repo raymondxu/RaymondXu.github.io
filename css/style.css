@@ -175,6 +175,12 @@ body {
     text-align: center;
 }
 
+@media (max-width: 769px) {
+    .bannertitle {
+        font-size: 2.5em;
+    }
+}
+
 .bannerbutton {
     text-align: center;
     font-size: 2.1em;
@@ -226,6 +232,12 @@ body {
     margin-right: 0;
     display: inline-block;
     vertical-align: center;
+}
+
+@media (max-width: 769px) {
+    .githubbutton {
+        margin-top: 15px;
+    }
 }
 
 
