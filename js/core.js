@@ -28,6 +28,16 @@
 
 
 
+$(window).scroll(function() {  
+        if($(window).scroll() > 300) {  
+        	$("#githubbutton").show();
+        }  
+        if($(window).scroll() < 300) {
+        	console.log("ok");
+        	$("#githubbutton").hide();
+        }  
+    });
+
 
 
 

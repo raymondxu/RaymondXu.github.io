@@ -50,7 +50,8 @@
 #githubbanner {
     background-image: url("../images/stardust.png");
     background-attachment: fixed;
-    text-align: center;
+    position: relative;
+    line-height: 480px;
 }
 
 .smallslide {
@@ -225,20 +226,14 @@ body {
     color: #FF9933;
 }
 
-.githubbutton {
-    margin-top: 120px;
-    text-align: center;
-    margin-left: 0;
-    margin-right: 0;
-    display: inline-block;
-    vertical-align: center;
+#githubbutton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -60px; /* Half the height */
+    margin-left: -60px; /* Half the width */
 }
 
-@media (max-width: 769px) {
-    .githubbutton {
-        margin-top: 15px;
-    }
-}
 
 
 /* CONTACT SECTION
