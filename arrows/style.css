@@ -13,7 +13,7 @@ body {
 #scoreDiv {
     margin-bottom: 50px;
 	text-align: center;
-	font-size: 3em;
+	font-size: 2.5em;
     font-weight: 100;
     font-family: "Montserrat", "Helvetica Neue";
 }
@@ -21,7 +21,7 @@ body {
 #timerDiv {
     margin-top: 40px;
 	text-align: center;
-	font-size: 3em;
+	font-size: 2.5em;
     font-weight: 100;
     font-family: "Montserrat", "Helvetica Neue";
 }
@@ -29,7 +29,7 @@ body {
 .instructions {
     margin: 50px;
     text-align: center;
-    font-size: 2.3em;
+    font-size: 2em;
     font-weight: 100;
     font-family: "Montserrat", "Helvetica Neue";
 }
@@ -55,7 +55,7 @@ body {
 
 .button {
     text-align: center;
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: 100;
     font-family: "Montserrat", "Helvetica Neue";
     color: #fff;
@@ -66,8 +66,8 @@ body {
 
     float: left;
     margin-left: 25%;
-    padding-top: 10px;
-    padding-bottom: 12px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     border-radius: 15px;
 }
 

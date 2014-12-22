@@ -1,23 +1,37 @@
 var arrow;
 var score = 0;
 var timer = 15;
+lastArrow = null;
+lastR = null;
 
 function generateRandomArrow()
 {
 	arrow = Math.floor((Math.random()*4)+1);
-	console.log(arrow);
 	displayArrow(arrow);
+	lastArrow = arrow;
 }
 
 function displayArrow(n)
 {
 	var img = document.getElementById("image");
-	var r = Math.floor(Math.random()*2);
+
+	// if same direction as last time, choose other color
+	if(lastArrow == n)
+	{
+		if(lastR == 0) 
+			r = 1;
+		else
+			r = 0;
+	}
+	else // otherwise, choose a random color
+		var r = Math.floor(Math.random()*2);
+
 	if(r == 0)
 		img.src="images/arrow" + n + ".png";
-	else
+	else // (r == 1)
 		img.src="images/redarrow" + n + ".png";
-	return false;
+
+	lastR = r;
 }
 
 function processKeyPress(n)
