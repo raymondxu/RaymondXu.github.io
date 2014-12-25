@@ -7,6 +7,15 @@ body {
 	background-color: #990033;
 }
 
+#instructions {
+	font-family: "Montserrat";
+	font-weight: 200;
+	font-size: 2.5em;
+	color: white;
+	margin-top: 40px;
+	margin-bottom: 50px;
+}
+
 .container {
 	margin-left: 100px;
 	margin-right: 100px;
@@ -42,7 +51,7 @@ body {
 	float: left;
 	border: solid 1px #990033;
 	background-color: white;
-	margin-bottom: 50px;
+	margin-bottom: 25px;
 }
 
 @media (max-width: 780px) {
@@ -56,7 +65,7 @@ body {
 		float: left;
 		border: solid 1px #990033;
 		background-color: white;
-		margin-bottom: 30px;
+		margin-bottom: 15px;
 	}
 }
 
@@ -86,4 +95,11 @@ body {
 #again {
 	margin-top: 20px;
 	margin-bottom: 50px;
+	font-size: 1.5em;
+}
+
+#start {
+	margin-top: 50px;
+	font-size: 3em;
+	color: #990033;
 }
