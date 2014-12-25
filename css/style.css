@@ -202,19 +202,19 @@ body {
     border-color: #fff;
 }
 
-.arrows {
+.nytimes {
     background-color: #AA3939;
 }
 
-.arrowsbutton:hover {
+.nytimesbutton:hover {
     color: #AA3939;
 }
 
-.pinpoint {
+.arrows {
     background-color: #A37ACC;
 }
 
-.pinpointbutton:hover {
+.arrowsbutton:hover {
     color: #A37ACC;
 }
 
