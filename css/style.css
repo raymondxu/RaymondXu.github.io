@@ -1,6 +1,5 @@
-/* PARALLAX LANDING PAGE
+/* PARALLAX SLIDES
 -------------------------------------------------- */
-
 
 #bg .title {
     padding-top: 110px;
@@ -91,6 +90,13 @@
     }
 }
 
+
+
+
+
+/* GENERAL ATTRIBUTES
+-------------------------------------------------- */
+
 html {
   height: 100%;
   overflow: hidden;
@@ -107,8 +113,15 @@ body {
   font-family: "Montserrat";
 }
 
+body a,visited {
+    text-decoration: none;
+    color: inherit;
+}
 
-
+* {
+margin: 0;
+padding: 0;
+}
 
 
 
@@ -152,6 +165,77 @@ body {
         margin: 70px 0px;
     }
 }
+
+
+
+
+
+/* COLUMNS
+-------------------------------------------------- */
+
+.columnedcontainer {
+    width: 100%;
+    min-height: 300px;
+    padding: 50px 0px;
+}
+
+@media (min-width: 769px) {
+.col {
+    float: left;
+    width: 33.333333333333333333333333%;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center;
+    min-width: 200px;
+}
+}
+
+@media (max-width: 769px) {
+.col {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 50px;
+    text-align: center;
+    min-width: 200px;
+}
+}
+
+.clear {
+    clear:both;
+}
+
+
+
+
+
+/* BUTTONS
+-------------------------------------------------- */
+
+.trifoldbutton {
+    border-radius: 50%;
+    display: inline-block;
+    border: solid 6px #91C8FF;
+    overflow: hidden;
+}
+
+/*.trifoldbutton:hover {
+    border-radius: 50%;
+    border: solid 6px #297ACC;
+}*/
+
+.trifoldbutton-active {
+    border-radius: 50%;
+    display: inline-block;
+    border: solid 6px #297ACC;
+    transition: all .3s ease-in-out;
+    overflow: hidden;
+}
+
+
 
 
 
@@ -202,6 +286,13 @@ body {
     border-color: #fff;
 }
 
+
+
+
+
+/* INDIVIDUAL BANNERS
+-------------------------------------------------- */
+
 .nytimes {
     background-color: #AA3939;
 }
@@ -236,6 +327,8 @@ body {
 
 
 
+
+
 /* CONTACT SECTION
 -------------------------------------------------- */
 
@@ -256,6 +349,10 @@ body {
 .contact .mediabutton:hover {
     background-color: #FFA347;
 }
+
+
+
+
 
 /* FOOTER SECTION
 -------------------------------------------------- */
@@ -284,123 +381,7 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* GENERAL ATTRIBUTES
--------------------------------------------------- */
-
-body {
-    overflow-x: hidden;
-}
-
-body a,visited {
-    text-decoration: none;
-    color: inherit;
-}
-
-* {
-margin: 0;
-padding: 0;
-}
-
-
-
-
-/* COLUMNS
--------------------------------------------------- */
-
-.columnedcontainer {
-    width: 100%;
-    min-height: 300px;
-    padding: 50px 0px;
-}
-
-@media (min-width: 769px) {
-.col {
-    float: left;
-    width: 33.333333333333333333333333%;
-    margin-left: 0px;
-    margin-right: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
-    text-align: center;
-    min-width: 200px;
-}
-}
-
-@media (max-width: 769px) {
-.col {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 0px;
-    padding-right: 0px;
-    margin-bottom: 50px;
-    text-align: center;
-    min-width: 200px;
-}
-}
-
-.clear {
-    clear:both;
-}
-
-
-
-
-/* BUTTONS
--------------------------------------------------- */
-
-.trifoldbutton {
-    border-radius: 50%;
-    display: inline-block;
-    border: solid 6px #91C8FF;
-    overflow: hidden;
-}
-
-/*.trifoldbutton:hover {
-    border-radius: 50%;
-    border: solid 6px #297ACC;
-}*/
-
-.trifoldbutton-active {
-    border-radius: 50%;
-    display: inline-block;
-    border: solid 6px #297ACC;
-    transition: all .3s ease-in-out;
-    overflow: hidden;
-}
-
-
-
-
-
-/* COLORS USED
+/* COLOR GUIDE
 --------------------------------------------------
 
 Light Blue: #91C8FF
