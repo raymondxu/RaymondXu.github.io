@@ -1,4 +1,4 @@
-var API_KEY = "e6958c82078e6aa51601f9c63d003551:4:59850174";
+var lock = "e6958c82078e6aa51601f9c63d003551:4:59850174";
 
 //generate random time frame
 var randomYear = Math.floor(Math.random() * 100 + 1850);
@@ -10,7 +10,7 @@ var day = "01";
 var randomDate = yearString + randomMonth + day;
 
 //ping nytimes api for random article
-var link = "http://api.nytimes.com/svc/search/v2/articlesearch.json?end_date=" + randomDate + "&api-key=" + API_KEY;
+var link = "http://api.nytimes.com/svc/search/v2/articlesearch.json?end_date=" + randomDate + "&api-key=" + lock;
 $.get(link, function(data,status){
 	var i = 0;
 	var newsSnippet = null;
