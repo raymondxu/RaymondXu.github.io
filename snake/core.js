@@ -19,6 +19,8 @@ $(document).ready(function(){
 	var bluesnake_array;
 	var redsnake_array;
 	var lastKey;
+	var blueScore = 0;
+	var redScore = 0;
 
 	function init()
 	{
@@ -80,14 +82,16 @@ $(document).ready(function(){
 			if(bnx == -1 || bnx == w/cell_width || bny == -1 || bny == h/cell_width ||
 				check_collision(bnx, bny, bluesnake_array) || check_collision(bnx, bny, redsnake_array))
 			{
-				alert("Red Wins");
+				redScore++;
+				alert("Red Wins! Red: " + redScore + " Blue: " + blueScore);
 				init();
 				return;
 			}
 			if(rnx == -1 || rnx == w/cell_width || rny == -1 || rny == h/cell_width ||
 				check_collision(rnx, rny, redsnake_array) || check_collision(rnx, rny, bluesnake_array))
 			{
-				alert("Blue Wins");
+				blueScore++
+				alert("Blue Wins! Red: " + redScore + " Blue: " + blueScore);
 				init();
 				return;
 			}
@@ -98,14 +102,16 @@ $(document).ready(function(){
 			if(rnx == -1 || rnx == w/cell_width || rny == -1 || rny == h/cell_width ||
 				check_collision(rnx, rny, redsnake_array) || check_collision(rnx, rny, bluesnake_array))
 			{
-				alert("Blue Wins");
+				blueScore++
+				alert("Blue Wins! Red: " + redScore + " Blue: " + blueScore);
 				init();
 				return;
 			}
 			if(bnx == -1 || bnx == w/cell_width || bny == -1 || bny == h/cell_width ||
 				check_collision(bnx, bny, bluesnake_array) || check_collision(bnx, bny, redsnake_array))
 			{
-				alert("Red Wins");
+				redScore++;
+				alert("Red Wins! Red: " + redScore + " Blue: " + blueScore);
 				init();
 				return;
 			}
