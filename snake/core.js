@@ -6,7 +6,8 @@
 // Raymond Xu
 // DevFest 2015
 
-$(document).ready(function(){
+
+
 	var canvas = $("#canvas")[0];
 	var contex = canvas.getContext("2d");
 	var w = $("#canvas").width();
@@ -32,17 +33,16 @@ $(document).ready(function(){
 		if(typeof game_loop != "undefined") clearInterval(game_loop);
 		game_loop = setInterval(paint, 60);
 	}
-	init();
 
 	function create_snake()
 	{
 		var length = 15;
 		bluesnake_array = [];
 		for(var i = length-1; i>=0; i--)
-			bluesnake_array.push({x: i, y: 0});
+			bluesnake_array.push({x: i, y: 4});
 		redsnake_array = [];
 		for(var i = length-1; i>=0; i--)
-			redsnake_array.push({x: w/cell_width - i, y: h/cell_width - 1});
+			redsnake_array.push({x: w/cell_width - i, y: h/cell_width - 5});
 	}
 	
 	function create_food()
@@ -83,16 +83,18 @@ $(document).ready(function(){
 				check_collision(bnx, bny, bluesnake_array) || check_collision(bnx, bny, redsnake_array))
 			{
 				redScore++;
-				alert("Red Wins! Red: " + redScore + " Blue: " + blueScore);
-				init();
+				console.log("Red Wins! Red: " + redScore + " Blue: " + blueScore);
+				bluesnake_array = [];
+				redsnake_array = [];
 				return;
 			}
 			if(rnx == -1 || rnx == w/cell_width || rny == -1 || rny == h/cell_width ||
 				check_collision(rnx, rny, redsnake_array) || check_collision(rnx, rny, bluesnake_array))
 			{
 				blueScore++
-				alert("Blue Wins! Red: " + redScore + " Blue: " + blueScore);
-				init();
+				console.log("Blue Wins! Red: " + redScore + " Blue: " + blueScore);
+				bluesnake_array = [];
+				redsnake_array = [];
 				return;
 			}
 		}
@@ -103,16 +105,18 @@ $(document).ready(function(){
 				check_collision(rnx, rny, redsnake_array) || check_collision(rnx, rny, bluesnake_array))
 			{
 				blueScore++
-				alert("Blue Wins! Red: " + redScore + " Blue: " + blueScore);
-				init();
+				console.log("Blue Wins! Red: " + redScore + " Blue: " + blueScore);
+				bluesnake_array = [];
+				redsnake_array = [];
 				return;
 			}
 			if(bnx == -1 || bnx == w/cell_width || bny == -1 || bny == h/cell_width ||
 				check_collision(bnx, bny, bluesnake_array) || check_collision(bnx, bny, redsnake_array))
 			{
 				redScore++;
-				alert("Red Wins! Red: " + redScore + " Blue: " + blueScore);
-				init();
+				console.log("Red Wins! Red: " + redScore + " Blue: " + blueScore);
+				bluesnake_array = [];
+				redsnake_array = [];
 				return;
 			}
 		}
@@ -234,4 +238,3 @@ $(document).ready(function(){
 			lastKey = "red";
 		}
 	})	
-})
