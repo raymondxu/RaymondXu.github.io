@@ -22,6 +22,7 @@
 	var lastKey;
 	var blueScore = 0;
 	var redScore = 0;
+	var pause = false;
 
 	function init()
 	{
@@ -29,7 +30,8 @@
 		red_dir = "left";
 		create_snake();
 		create_food();
-		
+		pause = false;
+
 		if(typeof game_loop != "undefined") clearInterval(game_loop);
 		game_loop = setInterval(paint, 60);
 	}
@@ -55,6 +57,8 @@
 	
 	function paint()
 	{
+		if(!pause)
+		{
 		contex.fillStyle = "white";
 		contex.fillRect(0, 0, w, h);
 		contex.strokeStyle = "red";
@@ -83,18 +87,16 @@
 				check_collision(bnx, bny, bluesnake_array) || check_collision(bnx, bny, redsnake_array))
 			{
 				redScore++;
-				console.log("Red Wins! Red: " + redScore + " Blue: " + blueScore);
-				bluesnake_array = [];
-				redsnake_array = [];
+				document.getElementById("red").innerHTML = redScore;
+				pause = true;
 				return;
 			}
 			if(rnx == -1 || rnx == w/cell_width || rny == -1 || rny == h/cell_width ||
 				check_collision(rnx, rny, redsnake_array) || check_collision(rnx, rny, bluesnake_array))
 			{
 				blueScore++
-				console.log("Blue Wins! Red: " + redScore + " Blue: " + blueScore);
-				bluesnake_array = [];
-				redsnake_array = [];
+				document.getElementById("blue").innerHTML = blueScore;
+				pause = true;
 				return;
 			}
 		}
@@ -105,18 +107,16 @@
 				check_collision(rnx, rny, redsnake_array) || check_collision(rnx, rny, bluesnake_array))
 			{
 				blueScore++
-				console.log("Blue Wins! Red: " + redScore + " Blue: " + blueScore);
-				bluesnake_array = [];
-				redsnake_array = [];
+				document.getElementById("blue").innerHTML = blueScore;
+				pause = true;
 				return;
 			}
 			if(bnx == -1 || bnx == w/cell_width || bny == -1 || bny == h/cell_width ||
 				check_collision(bnx, bny, bluesnake_array) || check_collision(bnx, bny, redsnake_array))
 			{
 				redScore++;
-				console.log("Red Wins! Red: " + redScore + " Blue: " + blueScore);
-				bluesnake_array = [];
-				redsnake_array = [];
+				document.getElementById("red").innerHTML = redScore;
+				pause = true;
 				return;
 			}
 		}
@@ -163,6 +163,7 @@
 		}
 		
 		paint_food(food.x, food.y);
+		}
 	}
 	
 
