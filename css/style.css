@@ -309,11 +309,11 @@ padding: 0;
     color: #A37ACC;
 }
 
-.medium {
+.snake {
     background-color: #FF9933;
 }
 
-.mediumbutton:hover {
+.snakebutton:hover {
     color: #FF9933;
 }
 
