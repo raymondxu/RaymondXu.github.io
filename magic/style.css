@@ -1,0 +1,36 @@
+.container {
+	text-align: center;
+}
+
+.instructions {
+	margin: 50px;
+	font-size: 30px;
+	font-family: Helvetica;
+	font-weight: 100;
+}
+
+.btn {
+	margin: 50px;
+	height: 100px;
+	width: 300px;
+	font-size: 30px;
+	font-family: Helvetica;
+	font-weight: 100;
+}
+
+#again {
+	display: none;
+}
+
+#output {
+	margin-top: 100px;
+	margin-bottom: 50px;
+	font-size: 30px;
+	font-family: Helvetica;
+	font-weight: 100;
+	color: green;
+}
+
+.counter {
+	margin-bottom: 30px;
+}
