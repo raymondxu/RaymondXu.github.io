@@ -4,7 +4,7 @@
 #bg .title {
     padding-top: 110px;
     text-align: center;
-    font-size: 2.4em;
+    font-size: 5.4em;
     font-weight: 100;
     color: white;
     font-family: "Helvetica Neue", sans-serif;
@@ -12,7 +12,7 @@
 
 @media (max-width: 769px) {
     #bg .title {
-	   font-size: 2em;
+	   font-size: 3em;
     }
 }
 
@@ -293,8 +293,6 @@ body a,visited {
 
 
 
-
-
 /* FOOTER SECTION
 -------------------------------------------------- */
 
@@ -317,8 +315,6 @@ body a,visited {
     font-family: "Helvetica Neue", sans-serif;
     color: #000;
 }
-
-
 
 
 

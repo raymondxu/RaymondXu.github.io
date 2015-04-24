@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+#bg {
+    background-image: url("../images/stardust.png");
+    background-attachment: fixed;
+}
+
+.title {
+    padding-top: 60px;
+    text-align: center;
+    font-size: 5.4rem;
+    font-weight: 100;
+    color: white;
+    font-family: "Helvetica Neue", sans-serif;
+}
+
+.onevh {
+    min-height: 100vh;
+}
+
+.navcontainer {
+    text-align: center;
+    padding: 50px 0px 60px 0px;
+}
+
+.nav {
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 100;
+    color: white;
+    font-size: 1.7rem;
+    padding: 30px;
+}
+
+.nav:hover {
+    color: orange;
+}
+
+.hover-highlight {
+    color: orange;
+}
+
+.tabcontainer {
+    text-align: center;
+    padding: 0px 100px;
+}
+
+.tab {
+    display: none;
+    padding: 50px;
+    height: 250px;
+    border-radius: 12px;
+    background-color: white;
+
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 100;
+    color: black;
+    font-size: 2rem;
+}
+
+.project {
+    padding: 10px;
+}
+
+.mediabutton {
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.mediabutton:hover {
+    background-color: #CDE6FF;
+}
+
+@media (max-width: 769px) {
+    .title {
+       font-size: 3.5rem;
+    }
+
+    .container {
+        padding: 30px;
+    }
+
+    .nav {
+       font-size: 1rem;
+       padding: 30px 20px;
+    }
+}

@@ -1,119 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
- 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-52348587-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
 
 <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta name="author" content="Raymond Xu">
-    <meta name="description" content="My personal website">
-    <title>Raymond Xu</title>
-    <link href="css/style.css" rel="stylesheet" type="text/css">
-    <link href="css/animate.css" rel="stylesheet" type="text/css">
-    <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="author" content="Raymond Xu">
+  <meta name="description" content="My personal website">
+  <title>Raymond Xu</title>
+  <link href="css/newstyle.css" rel="stylesheet" type="text/css">
+  <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
 </head>
 
-
 <body id="page-top" class="index">
+  <div id="bg" class="onevh">
+    <a href="index.html"><div class="title">Raymond Xu</div></a>
 
-
-
-  <div id="bg" class="slide">
-    <div class="title">
-        <div class="animated fadeInUp title">Raymond Xu</div>
+    <div class="navcontainer">
+      <span id="about" class="nav">ABOUT</span>
+      <span id="projects" class="nav">PROJECTS</span>
+      <span id="contact" class="nav">CONTACT</span>
     </div>
-  </div>
 
+    <div class="tabcontainer">
 
+      <div id="aboutdiv" class="tab">
+        Hi! My name is Raymond Xu, and I study Computer Science at Columbia University. In my free time, I love building cool apps, learning new technologies, practicing sleight of hand, and contemplating the world. This summer I'll be working at PayPal as a software engineering intern. Feel free to contact me!
+      </div>
 
-  <div class="trifold">
+      <div id="projectsdiv" class="tab">
+        <div class="project"><a href="nytimes/index.html">NYTimes Decades Challenge</a></div>
+        <div class="project"><a href="arrows/index.html">Arrows</a></div>
+        <div class="project"><a href="snake/index.html">Battle Snake</a></div>
+      </div>
 
-      <div class="columnedcontainer">
-        
-        <div class="col">
-          <img class="trifoldbutton studentbutton" src="images/studenticon.png">
-          <h2>Student</h2>
-          <p>Computer Science Major at Columbia University.</p>
+      <div id="contactdiv" class="tab">
+        <div class="contact">
+          <a href="mailto:mail@raymondxu.io?Subject=Hello!" target="_top"><img class="mediabutton" src="images/mail.png"></a>
+          <a href="https://www.facebook.com/RayXu" target="_blank"><img class="mediabutton" src="images/facebook.png"></a>
+          <a href="https://www.linkedin.com/pub/raymond-xu/65/303/b58" target="_blank"><img class="mediabutton" src="images/linkedin.png"></a>
         </div>
-        
-        <div class="col">
-          <img class="trifoldbutton programmerbutton" src="images/programmingicon.png">
-          <h2>Developer</h2>
-          <p>I love building cool things and learning new technologies.</p>
-        </div>
-        
-        <div class="col">
-          <img class="trifoldbutton magicianbutton" src="images/magicianicon.png">
-          <h2>Magician</h2>
-          <p>Sleight of hand artist.</p>
-        </div>
-        
+      </div>
     </div>
+
   </div>
-
-
-
-  <div id="columbia" class="slide smallslide">
-    <div class="title">
-        Studying at Columbia University
-    </div>
-  </div>
-
-
-
-  <div class="banner nytimes">
-    <div class="bannertitle">NYTimes Decades Challenge</div>
-    <a href="nytimes/index.html" class="bannerbutton nytimesbutton">PLAY</a>
-  </div>
-
-  <div class="banner snake">
-    <div class="bannertitle">Battle Snake</div>
-    <a href="snake/index.html" class="bannerbutton snakebutton">PLAY</a>
-  </div>
-
-  <div class="banner arrows">
-    <div class="bannertitle">Arrows</div>
-    <a href="arrows/index.html" class="bannerbutton arrowsbutton">PLAY</a>
-  </div>
-
-
-
-  <a href="https://www.github.com/raymondxu"><div id="githubbanner" class="slide tinyslide">
-    <img id="githubbutton" src="images/github.png">
-  </div></a>
-
-
-
-  <div class="contact"><a id="contact"></a>
-    <div class="container">
-        <a href="mailto:mail@raymondxu.io?Subject=Hello!" target="_top"><img class="mediabutton" src="images/mail.png"></a>
-        <a href="https://www.facebook.com/RayXu" target="_blank"><img class="mediabutton" src="images/facebook.png"></a>
-        <a href="https://www.linkedin.com/pub/raymond-xu/65/303/b58" target="_blank"><img class="mediabutton" src="images/linkedin.png"></a>
-    </div>
-  </div>
-
-
-
-  <div class="footer"><a id="footer"></a>
-    <hr>
-    <div class="copyright">
-      &copy; 2014-<script>document.write(new Date().getFullYear());</script> Raymond Xu
-    </div>
-  </div>
-
 </body>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
