@@ -79,15 +79,26 @@ a:link {
 
 @media (max-width: 769px) {
     .title {
-       font-size: 3.5rem;
+        padding-top: 30px;
+        font-size: 3rem;
     }
 
-    .container {
-        padding: 30px;
+    .navcontainer {
+        padding: 30px 0px;
     }
 
     .nav {
        font-size: 1rem;
-       padding: 30px 20px;
+       padding: 20px 10px;
+    }
+
+    .tabcontainer {
+        padding: 0px 25px;
+    }
+
+    .tab {
+        padding: 20px;
+        height: 200px;
+        font-size: 1rem;
     }
 }
