@@ -36,6 +36,7 @@ a:link {
     color: white;
     font-size: 1.7rem;
     padding: 30px;
+    cursor: pointer;
 }
 
 .nav:hover {
@@ -89,7 +90,7 @@ a:link {
 
     .nav {
        font-size: 1rem;
-       padding: 20px 10px;
+       padding: 10px 10px;
     }
 
     .tabcontainer {
@@ -98,7 +99,7 @@ a:link {
 
     .tab {
         padding: 20px;
-        height: 200px;
+        height: 220px;
         font-size: 1rem;
     }
 }
