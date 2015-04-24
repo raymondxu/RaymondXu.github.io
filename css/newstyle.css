@@ -75,6 +75,18 @@ a:link {
 }
 
 .mediabutton:hover {
+    background-color: #A4D8E2;
+}
+
+.github {
+    padding-bottom: 30px;
+}
+
+#githubbutton {
+    border-radius: 50%;
+}
+
+#githubbutton:hover {
     background-color: #CDE6FF;
 }
 
