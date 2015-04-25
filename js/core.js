@@ -20,6 +20,7 @@ var selectTab = function(index) {
 		}
 		else {
 			$(tabs[i]).hide();
+			$(".behind").hide();
 			if ($(navs[i]).hasClass("hover-highlight")) {
 				$(navs[i]).toggleClass("hover-highlight");
 			}

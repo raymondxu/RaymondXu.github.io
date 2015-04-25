@@ -1,117 +1,185 @@
 * {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 a:link {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 #bg {
-    background-image: url("../images/stardust.png");
-    background-attachment: fixed;
+	background-image: url("../images/stardust.png");
+	background-attachment: fixed;
 }
 
 .title {
-    padding-top: 60px;
-    text-align: center;
-    font-size: 5.4rem;
-    font-weight: 100;
-    color: white;
-    font-family: "Helvetica Neue", sans-serif;
+	padding-top: 60px;
+	text-align: center;
+	font-size: 5.4rem;
+	font-weight: 100;
+	color: white;
+	font-family: "Helvetica Neue", sans-serif;
 }
 
 .onevh {
-    min-height: 100vh;
+	min-height: 100vh;
 }
 
 .navcontainer {
-    text-align: center;
-    padding: 50px 0px 60px 0px;
+	text-align: center;
+	padding: 50px 0px 60px 0px;
 }
 
 .nav {
-    font-family: "Helvetica Neue", sans-serif;
-    font-weight: 100;
-    color: white;
-    font-size: 1.7rem;
-    padding: 30px;
-    cursor: pointer;
+	font-family: "Helvetica Neue", sans-serif;
+	font-weight: 100;
+	color: white;
+	font-size: 1.7rem;
+	padding: 30px;
+	cursor: pointer;
 }
 
 .nav:hover {
-    color: orange;
+	color: orange;
 }
 
 .hover-highlight {
-    color: orange;
+	color: orange;
 }
 
 .tabcontainer {
-    text-align: center;
-    padding: 0px 100px;
+	text-align: center;
+	padding: 0px 100px;
 }
 
 .tab {
-    display: none;
-    padding: 50px;
-    height: 250px;
-    border-radius: 12px;
-    background-color: white;
+	display: none;
+	padding: 50px;
+	height: 250px;
+	border-radius: 12px;
+	background-color: white;
 
-    font-family: "Helvetica Neue", sans-serif;
-    font-weight: 100;
-    color: black;
-    font-size: 2rem;
+	font-family: "Helvetica Neue", sans-serif;
+	font-weight: 100;
+	color: black;
+	font-size: 2rem;
 }
 
 .project {
-    padding: 10px;
+	padding: 10px;
 }
 
 .mediabutton {
-    border-radius: 50%;
-    display: inline-block;
+	border-radius: 50%;
+	display: inline-block;
 }
 
 .mediabutton:hover {
-    background-color: #A4D8E2;
+	background-color: #A4D8E2;
 }
 
 .github {
-    padding-bottom: 30px;
+	padding-bottom: 30px;
 }
 
 #githubbutton {
-    border-radius: 50%;
+	border-radius: 50%;
 }
 
 #githubbutton:hover {
-    background-color: #CDE6FF;
+	background-color: #CDE6FF;
+}
+
+.cube1 {
+	margin-top: 120px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 50px;
+	width: 50px;
+	background-color: white;
+  	-webkit-animation: spin 10s linear infinite;
+	-moz-animation: spin 10s linear infinite;
+	-o-animation: spin 10s linear infinite;
+}
+
+.cube2 {
+	margin-top: -61px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 71px;
+	width: 71px;
+	background-color: white;
+	opacity: 0.5;
+  	-webkit-animation: negspin 10s linear infinite;
+	-moz-animation: negspin 10s linear infinite;
+	-o-animation: negspin 10s linear infinite;
+}
+
+.cube3 {
+	margin-top: -85px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 100px;
+	width: 100px;
+	background-color: white;
+	opacity: 0.25;
+  	-webkit-animation: spin 10s linear infinite;
+	-moz-animation: spin 10s linear infinite;
+	-o-animation: spin 10s linear infinite;
+}
+
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+@-moz-keyframes negspin {
+    from { -moz-transform: rotate(360deg); }
+    to { -moz-transform: rotate(0deg); }
+}
+
+@-webkit-keyframes negspin {
+    from { -webkit-transform: rotate(360deg); }
+    to { -webkit-transform: rotate(0deg); }
+}
+
+@keyframes negspin {
+    from {transform:rotate(360deg);}
+    to {transform:rotate(00deg);}
 }
 
 @media (max-width: 769px) {
-    .title {
-        padding-top: 30px;
-        font-size: 3rem;
-    }
+	.title {
+		padding-top: 30px;
+		font-size: 3rem;
+	}
 
-    .navcontainer {
-        padding: 30px 0px;
-    }
+	.navcontainer {
+		padding: 30px 0px;
+	}
 
-    .nav {
-       font-size: 1rem;
-       padding: 10px 10px;
-    }
+	.nav {
+	   font-size: 1rem;
+	   padding: 10px 10px;
+	}
 
-    .tabcontainer {
-        padding: 0px 25px;
-    }
+	.tabcontainer {
+		padding: 0px 25px;
+	}
 
-    .tab {
-        padding: 20px;
-        height: 220px;
-        font-size: 1rem;
-    }
+	.tab {
+		padding: 20px;
+		height: 220px;
+		font-size: 1rem;
+	}
 }
