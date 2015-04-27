@@ -17,7 +17,7 @@ a:link {
 	text-align: center;
 	font-size: 5.4rem;
 	font-weight: 100;
-	color: white;
+	color: #FFFFFF;
 	font-family: "Helvetica Neue", sans-serif;
 }
 
@@ -33,18 +33,18 @@ a:link {
 .nav {
 	font-family: "Helvetica Neue", sans-serif;
 	font-weight: 100;
-	color: white;
+	color: #FFFFFF;
 	font-size: 1.7rem;
 	padding: 30px;
 	cursor: pointer;
 }
 
 .nav:hover {
-	color: orange;
+	color: #FF9933;
 }
 
 .hover-highlight {
-	color: orange;
+	color: #FF9933;
 }
 
 .tabcontainer {
@@ -54,32 +54,30 @@ a:link {
 
 .tab {
 	display: none;
+	text-align: center;
 	padding: 50px;
-	height: 250px;
+	height: auto;
 	border-radius: 12px;
-	background-color: white;
-	font-family: "Helvetica Neue", sans-serif;
+	background-color: #FFFFFF;
+	font-family: "Montserrat", "Helvetica Neue", sans-serif;
 	font-weight: 100;
 	color: black;
-	font-size: 2rem;
-}
-
-#projectsdiv {
-	text-align: center;
+	font-size: 1.8rem;
 }
 
 .project {
 	display: inline-block;
 	border-radius: 12px;
 	width: 20%;
-	padding: 100px 10px 100px 10px;
+	padding: 50px 10px 50px 10px;
 	margin: 0 15px 0 15px;
-	background-color: #C2A3FF;
-	font-size: 2.5rem;
+	background-color: #788CD3;
+	font-size: 2.2rem;
+	color: #FFFFFF;
 }
 
 .project:hover {
-	background-color: #AF93E6;
+	background-color: #6C7EBE;
 }
 
 .mediabutton {
@@ -95,21 +93,13 @@ a:link {
 	padding-bottom: 30px;
 }
 
-#githubbutton {
-	border-radius: 50%;
-}
-
-#githubbutton:hover {
-	background-color: #CDE6FF;
-}
-
 .cube1 {
 	margin-top: 120px;
 	margin-left: auto;
 	margin-right: auto;
 	height: 50px;
 	width: 50px;
-	background-color: white;
+	background-color: #FFFFFF;
   	-webkit-animation: spin 10s linear infinite;
 	-moz-animation: spin 10s linear infinite;
 	-o-animation: spin 10s linear infinite;
@@ -121,7 +111,7 @@ a:link {
 	margin-right: auto;
 	height: 71px;
 	width: 71px;
-	background-color: white;
+	background-color: #FFFFFF;
 	opacity: 0.5;
   	-webkit-animation: negspin 10s linear infinite;
 	-moz-animation: negspin 10s linear infinite;
@@ -134,7 +124,7 @@ a:link {
 	margin-right: auto;
 	height: 100px;
 	width: 100px;
-	background-color: white;
+	background-color: #FFFFFF;
 	opacity: 0.25;
   	-webkit-animation: spin 10s linear infinite;
 	-moz-animation: spin 10s linear infinite;
