@@ -49,7 +49,7 @@ a:link {
 
 .tabcontainer {
 	text-align: center;
-	padding: 0px 100px;
+	padding: 0px 150px;
 }
 
 .tab {
@@ -58,7 +58,6 @@ a:link {
 	height: 250px;
 	border-radius: 12px;
 	background-color: white;
-
 	font-family: "Helvetica Neue", sans-serif;
 	font-weight: 100;
 	color: black;
@@ -66,7 +65,17 @@ a:link {
 }
 
 .project {
-	padding: 10px;
+	display: inline-block;
+	border-radius: 12px;
+	width: 20%;
+	padding: 100px 10px 100px 10px;
+	margin: 0 15px 0 15px;
+	background-color: #C2A3FF;
+	font-size: 2.5rem;
+}
+
+.project:hover {
+	background-color: #AF93E6;
 }
 
 .mediabutton {
@@ -178,8 +187,15 @@ a:link {
 	}
 
 	.tab {
-		padding: 20px;
+		padding: 25px;
 		height: 220px;
-		font-size: 1rem;
+		font-size: 1.4rem;
+	}
+
+	.project {
+		margin-top: 23px;
+		padding: 70px 10px 70px 10px;
+		font-size: 1.5rem;
+		margin: 0;
 	}
 }
