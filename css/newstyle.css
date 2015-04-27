@@ -64,6 +64,11 @@ a:link {
 	font-size: 2rem;
 }
 
+#projectsdiv {
+	text-align: center;
+	padding: 30px;
+}
+
 .project {
 	display: inline-block;
 	border-radius: 12px;
@@ -189,13 +194,14 @@ a:link {
 	.tab {
 		padding: 25px;
 		height: 220px;
-		font-size: 1.4rem;
+		font-size: 1rem;
 	}
 
 	.project {
-		margin-top: 23px;
-		padding: 70px 10px 70px 10px;
+		display: block;
+		width: 100%;
+		padding: 10px 0 10px 0;
+		margin: 10px 0 10px 0;
 		font-size: 1.5rem;
-		margin: 0;
 	}
 }
