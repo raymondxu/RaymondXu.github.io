@@ -7,7 +7,7 @@ a:link {
 	text-decoration: none;
 }
 
-#bg {
+body {
 	background-image: url("../images/stardust.png");
 	background-attachment: fixed;
 }
@@ -32,7 +32,7 @@ a:link {
 
 .nav {
 	font-family: "Helvetica Neue", sans-serif;
-	font-weight: 100;
+	font-weight: 200;
 	color: #FFFFFF;
 	font-size: 1.7rem;
 	padding: 30px;
@@ -59,13 +59,14 @@ a:link {
 	height: auto;
 	border-radius: 12px;
 	background-color: #FFFFFF;
-	font-family: "Montserrat", "Helvetica Neue", sans-serif;
+	font-family: "Cabin", "Helvetica Neue", sans-serif;
 	font-weight: 100;
 	color: black;
 	font-size: 1.8rem;
 }
 
 .project {
+	font-family: "Montserrat", "Helvetica Neue", sans-serif;
 	display: inline-block;
 	border-radius: 12px;
 	width: 20%;
