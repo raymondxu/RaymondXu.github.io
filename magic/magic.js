@@ -11,12 +11,12 @@ $('#go').on('click', function() {
 	var five = $('#five').val();
 	$('#input').hide();
 	performMagic(one, two, three, four, five)
-	$('#again').show();
+	$('#conclusion').show();
 });
 
 $('#again').on('click', function() {
 	$('#input').show();
-	$('#again').hide();
+	$('#conclusion').hide();
 	document.getElementById('output').innerHTML = '';
 	document.getElementById('addendum').innerHTML = i;
 });
@@ -36,8 +36,6 @@ var performMagic = function (one, two, three, four, five) {
 		return getStrength(a) - getStrength(b);
 	});
 
-	console.log(cards);
-
 	for (var i = 0; i < cards.length - 1; i++) {
 		if (getSuit(cards[i]) === getSuit(cards[i + 1])) {
 			mystery.push(cards[i]);
@@ -45,8 +43,6 @@ var performMagic = function (one, two, three, four, five) {
 			break;
 		}
 	}
-
-	console.log('mystery: ' + mystery);
 
 	var public = mystery[0];
 	var private = mystery[1];
@@ -61,18 +57,10 @@ var performMagic = function (one, two, three, four, five) {
 		diff = VALUES.indexOf(getValue(mystery[1])) - VALUES.indexOf(getValue(mystery[0]));
 	}
 
-	console.log('public: ' + public);
-	console.log('private: ' + private);
-	alert('Your card is: ' + private);
-	console.log('diff:' + diff);
-
+	alert('Your card is ' + private + '. After memorizing your card, close this box.');
 	cards.splice(cards.indexOf(private), 1);
 	cards.splice(cards.indexOf(public), 1);
-
 	cards = jumble(cards, diff);
-
-	console.log('cards before adding suit card in place: ' + cards);
-
 	cards.splice(getKeyIndex(), 0, public);
 
 	document.getElementById('output').innerHTML = cards;
@@ -83,7 +71,6 @@ var jumble = function(arr, num) {
 	arr.sort(function(a, b) {
 		return getStrength(a) - getStrength(b);
 	});
-	console.log('prejumble: ' + arr);
 
 	if (num === 1) {
 		jumbledArr.push(arr[0]);
