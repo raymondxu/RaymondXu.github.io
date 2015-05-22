@@ -16,7 +16,7 @@ body {
 	padding-top: 60px;
 	text-align: center;
 	font-size: 5.4rem;
-	font-weight: 100;
+	font-weight: 200;
 	color: #FFFFFF;
 	font-family: "Helvetica Neue", sans-serif;
 }
@@ -59,8 +59,8 @@ body {
 	height: 250px;
 	border-radius: 12px;
 	background-color: #FFFFFF;
-	font-family: "Cabin", "Helvetica Neue", sans-serif;
-	font-weight: 100;
+	font-family: "Helvetica Neue", sans-serif;
+	font-weight: 200;
 	color: black;
 	font-size: 1.8rem;
 }
@@ -88,7 +88,7 @@ body {
 }
 
 .mediabutton:hover {
-	background-color: #ACCCCC;
+	background-color: #CCCCCC;
 }
 
 .github {
