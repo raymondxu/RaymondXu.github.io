@@ -38,7 +38,6 @@
 }
 
 .card-input {
-	text-align: center;
 	margin: 4px;
 	width: 60%;
 }
@@ -52,13 +51,11 @@
 
 	.instructions {
 		margin: 10px;
-		font-size: 20px;
+		font-size: 10px;
 	}
 
 	.card-input {
 		width: 80%;
-		margin-left: auto;
-		margin-right: auto;
 	}
 
 	.btn {
@@ -66,5 +63,9 @@
 		height: 50px;
 		width: 40%;
 		font-size: 18px;
+	}
+
+	#output {
+		font-size: 25px;
 	}
 }
