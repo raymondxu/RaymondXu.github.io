@@ -13,8 +13,9 @@ $("#contact").click(function(){
 var selectTab = function(index) {
 	navs = ["#about", "#projects", "#contact"];
 	tabs = ["#aboutdiv", "#projectsdiv", "#contactdiv"];
+
 	for (var i = 0; i < tabs.length; i++) {
-		if (i == index) {
+		if (i === index) {
 			$(tabs[i]).show();
 			$(navs[i]).toggleClass("hover-highlight");
 		}
