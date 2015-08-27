@@ -21,11 +21,11 @@ body {
 	font-family: "Helvetica Neue", sans-serif;
 }
 
-.onevh {
+.one-vh {
 	height: 100vh;
 }
 
-.navcontainer {
+.nav-container {
 	text-align: center;
 	padding: 50px 0px 60px 0px;
 }
@@ -47,7 +47,7 @@ body {
 	color: #FF9933;
 }
 
-.tabcontainer {
+.tab-container {
 	margin-left: 20%;
 	width: 60%;
 	text-align: center;
@@ -83,12 +83,12 @@ body {
 	background-color: #6C7EBE;
 }
 
-.mediabutton {
+.media-button {
 	border-radius: 50%;
 	display: inline-block;
 }
 
-.mediabutton:hover {
+.media-button:hover {
 	background-color: #EEEEEE;
 }
 
@@ -218,7 +218,7 @@ body {
 		font-size: 3rem;
 	}
 
-	.navcontainer {
+	.nav-container {
 		padding: 30px 0px;
 	}
 
@@ -227,7 +227,7 @@ body {
 	   padding: 10px 10px;
 	}
 
-	.tabcontainer {
+	.tab-container {
 		margin-left: 5%;
 		width: 90%;
 	}
@@ -238,8 +238,8 @@ body {
 		font-size: 1rem;
 	}
 
-	#aboutdiv {
-		padding: 10px;
+	#about-div {
+		padding: 12px;
 	}
 
 	.project {

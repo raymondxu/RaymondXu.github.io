@@ -12,7 +12,7 @@ $("#contact").click(function(){
 
 var selectTab = function(index) {
 	navs = ["#about", "#projects", "#contact"];
-	tabs = ["#aboutdiv", "#projectsdiv", "#contactdiv"];
+	tabs = ["#about-div", "#projects-div", "#contact-div"];
 
 	for (var i = 0; i < tabs.length; i++) {
 		if (i === index) {
