@@ -160,6 +160,41 @@ body {
     to {transform:rotate(00deg);}
 }
 
+#github {
+	position: absolute;
+	left: 50%;
+	margin-left: -60px;
+	margin-top: 50px;
+}
+
+.ring {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    position: absolute;
+   	left: 50%;
+   	margin-left: -127px;
+   	margin-top: -17px;
+    background-color: transparent;
+    border: 2px #7C92FF solid;
+    -webkit-animation-name: ani; 
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-duration: 9s;
+    -webkit-animation-direction: normal;
+}
+
+@-webkit-keyframes ani {
+    0% {-webkit-transform: scale(0.48); opacity: 0} 
+    3% {-webkit-transform: scale(0.48); opacity: 1} 
+    95% {-webkit-transform: scale(1); opacity: 1;}
+    100% {-webkit-transform: scale(1); opacity: 0;}
+}
+
+#r2 { -webkit-animation-delay: -3s;}
+#r3 { -webkit-animation-delay: -6s;}
+#r4 { -webkit-animation-delay: -9s;}
+
 @media (max-width: 1024px) {
 	.tab {
 		font-size: 1.4rem;
