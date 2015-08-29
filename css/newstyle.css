@@ -21,7 +21,7 @@ body {
 	font-family: "Helvetica Neue", sans-serif;
 }
 
-.one-vh {
+.one-viewport {
 	height: 100vh;
 }
 
@@ -92,6 +92,14 @@ body {
 	background-color: #EEEEEE;
 }
 
+.contact {
+	margin-top: 90px;
+}
+
+
+/**
+ * Tri-cube animation
+ */
 .cube1 {
 	margin-top: 120px;
 	margin-left: auto;
@@ -160,6 +168,10 @@ body {
     to {transform:rotate(00deg);}
 }
 
+
+/**
+ * Animated rings
+ */
 #github {
 	position: absolute;
 	left: 50%;
@@ -195,6 +207,10 @@ body {
 #r3 { -webkit-animation-delay: -6s;}
 #r4 { -webkit-animation-delay: -9s;}
 
+
+/**
+ * Responsive views
+ */
 @media (max-width: 1024px) {
 	.tab {
 		font-size: 1.4rem;
@@ -244,5 +260,9 @@ body {
 
 	.project {
 		padding: 10px 0 10px 0;
+	}
+
+	.contact {
+		margin-top: 80px;
 	}
 }
