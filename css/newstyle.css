@@ -1,6 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	color: inherit;
 }
 
 a:link {
@@ -13,12 +14,13 @@ body {
 }
 
 .title {
-	padding-top: 60px;
+	margin-top: 60px;
 	text-align: center;
 	font-size: 5.4rem;
 	font-weight: 200;
 	color: #FFFFFF;
 	font-family: "Helvetica Neue", sans-serif;
+	text-decoration: none;
 }
 
 .one-viewport {
@@ -35,7 +37,7 @@ body {
 	font-weight: 200;
 	color: #FFFFFF;
 	font-size: 1.7rem;
-	padding: 30px;
+	margin: 30px;
 	cursor: pointer;
 }
 
@@ -64,6 +66,10 @@ body {
 	font-weight: 200;
 	color: black;
 	font-size: 1.8rem;
+}
+
+.colored-link {
+	color: #006BDF;
 }
 
 .project {
@@ -98,7 +104,7 @@ body {
 
 
 /**
- * Tri-cube animation
+ * Cube^3 animation
  */
 .cube1 {
 	margin-top: 120px;
@@ -188,7 +194,7 @@ body {
    	margin-left: -127px;
    	margin-top: -17px;
     background-color: transparent;
-    border: 2px #7C92FF solid;
+    border: 2px #006BDF solid;
     -webkit-animation-name: ani; 
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
@@ -230,7 +236,7 @@ body {
 
 @media (max-width: 768px) {
 	.title {
-		padding-top: 20px;
+		margin-top: 20px;
 		font-size: 3rem;
 	}
 
@@ -240,7 +246,7 @@ body {
 
 	.nav {
 	   font-size: 1rem;
-	   padding: 10px 10px;
+	   margin: 10px 10px;
 	}
 
 	.tab-container {
