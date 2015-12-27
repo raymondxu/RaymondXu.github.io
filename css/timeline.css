@@ -44,4 +44,10 @@
 	.event-description {
 		font-size: 1rem;
 	}
+
+	.event-image {
+		max-width: 96px;
+		max-height: 72px;
+	}
+
 }
