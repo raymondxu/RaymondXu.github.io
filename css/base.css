@@ -71,10 +71,6 @@ body {
 	font-size: 1.8rem;
 }
 
-.colored-link {
-	color: #006BDF;
-}
-
 .project {
 	font-family: "Montserrat", "Helvetica Neue", sans-serif;
 	display: inline-block;
@@ -99,6 +95,18 @@ body {
 
 .media-button:hover {
 	background-color: #EEEEEE;
+}
+
+.colored-link {
+	color: #006BDF;
+}
+
+.colored-link:hover {
+	color: #0062FF;
+}
+
+.talk {
+	margin-bottom: 35px;
 }
 
 .contact {
