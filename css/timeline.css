@@ -1,0 +1,48 @@
+.container {
+	background-color: #FFFFFF;
+	width: 80%;
+	margin-left: 10%;
+	text-align: center;
+}
+
+.event {
+	margin-top: 10px;
+	height: 150px;
+	opacity: 1;
+}
+
+.event-image-container {
+	height: 120px;
+	width: 35%;
+	position: inline-block;
+	float: left;
+}
+
+.event-image {
+	max-width: 120px;
+	max-height: 90px;
+	float: right;
+}
+
+.event-description {
+	text-align: left;
+	margin-top: 15px;
+	font-family: "Lato";
+	font-weight: 200;
+	font-size: 1.5rem;
+	position: inline-block;
+	margin-right: 5%;
+	width: 55%;
+	float: right;
+}
+
+@media (max-width: 768px) {
+	.container {
+		width: 90%;
+		margin-left: 5%;
+	}
+
+	.event-description {
+		font-size: 1rem;
+	}
+}

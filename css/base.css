@@ -11,6 +11,7 @@ a:link {
 body {
 	background-image: url("../images/stardust.png");
 	background-attachment: fixed;
+	overflow-y: hidden;
 }
 
 .title {
@@ -53,13 +54,15 @@ body {
 	margin-left: 20%;
 	width: 60%;
 	text-align: center;
+	padding-bottom: 50px;
 }
 
 .tab {
 	display: none;
 	text-align: center;
+	background-color: black;
 	padding: 50px;
-	height: 250px;
+	min-height: 250px;
 	border-radius: 12px;
 	background-color: #FFFFFF;
 	font-family: "Helvetica Neue", sans-serif;
@@ -256,7 +259,7 @@ body {
 
 	.tab {
 		padding: 25px;
-		height: 220px;
+		min-height: 220px;
 		font-size: 1rem;
 	}
 
