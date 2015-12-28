@@ -1,35 +1,33 @@
-$("#about").click(function(){
-	selectTab(0);
-});
+// Open up the selected tab and hide the others
+function selectTab(navId) {
+	$('.behind').hide();
 
-$("#projects").click(function(){
-	selectTab(1);
-});
-
-$("#talks").click(function(){
-	selectTab(2);
-});
-
-$("#contact").click(function(){
-	selectTab(3);
-});
-
-
-var selectTab = function(index) {
-	navs = ["#about", "#projects", "#talks", "#contact"];
-	tabs = ["#about-div", "#projects-div", "#talks-div", "#contact-div"];
+	var targetTab = navId + '-div';
+	var targetNav = document.getElementById(navId);
+	var tabs = document.getElementsByClassName('tab');
 
 	for (var i = 0; i < tabs.length; i++) {
-		if (i === index) {
+		if (tabs[i].id === targetTab) {
 			$(tabs[i]).show();
-			$(navs[i]).toggleClass("hover-highlight");
 		}
 		else {
 			$(tabs[i]).hide();
-			$(".behind").hide();
-			if ($(navs[i]).hasClass("hover-highlight")) {
-				$(navs[i]).toggleClass("hover-highlight");
-			}
 		}
 	}
 }
+
+
+// When a nav is clicked, highlight it and open up the
+// corresponding tab
+previousNavSelected = null;
+
+$('.nav').each(function() {
+	$(this).on('click', function() {
+		selectTab($(this).attr('id'));
+		if (previousNavSelected !== null) {
+			previousNavSelected.classList.toggle('nav-selected');
+		}
+		this.classList.toggle('nav-selected');
+		previousNavSelected = this;
+	});
+});
