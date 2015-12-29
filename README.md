@@ -1,1 +1,2 @@
-## This is my personal website that I've been building to explore HTML, CSS, and JavaScript. As a result, please view it as a work in progress rather than a final product. The design itself has undergone many iterations at this point. Currently, the website has a single-viewport, tabbed design that is clean and minimalistic.
+## www.raymondxu.io
+### This is the source code for my personal website that I've been building to explore HTML, CSS, and JavaScript. Please view it as a work in progress rather than a final product. Its design has undergone dozens of iterations including parallax scollers and multi-pagers. Currently, the website features a single-page, tabbed design that is clean and minimalistic.
