@@ -50,4 +50,11 @@
 		max-height: 72px;
 	}
 
+	.event {
+		height: 90px;
+	}
+
+	.event-image-container {
+		height: 80px;
+	}
 }

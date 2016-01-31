@@ -275,6 +275,14 @@ body {
 		padding: 12px;
 	}
 
+	#talks-div {
+		padding: 12px;
+	}
+
+	.talk {
+		margin-bottom: 15px;
+	}
+
 	.project {
 		padding: 10px 0 10px 0;
 	}
