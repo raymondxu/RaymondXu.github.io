@@ -1,3 +1,4 @@
+/* General */
 * {
 	margin: 0;
 	padding: 0;
@@ -24,8 +25,10 @@ body {
 }
 
 .one-viewport {
-	height: 100vh;
+	height: 1vh;
 }
+
+/* Navigation */
 
 .nav-container {
 	text-align: center;
@@ -70,6 +73,16 @@ body {
 	font-size: 1.8rem;
 }
 
+/* About */
+.colored-link {
+	color: #006BDF;
+}
+
+.colored-link:hover {
+	color: #0062FF;
+}
+
+/* Projects */
 .project {
 	font-family: "Montserrat", "Helvetica Neue", sans-serif;
 	display: inline-block;
@@ -87,6 +100,17 @@ body {
 	background-color: #6C7EBE;
 }
 
+/* Talks */
+.talk {
+	margin-bottom: 25px;
+	font-family: "Montserrat", "Helvetica Neue";
+}
+
+/* Contact */
+.contact {
+	margin-top: 90px;
+}
+
 .media-button {
 	border-radius: 50%;
 	display: inline-block;
@@ -96,27 +120,7 @@ body {
 	background-color: #EEEEEE;
 }
 
-.colored-link {
-	color: #006BDF;
-}
-
-.colored-link:hover {
-	color: #0062FF;
-}
-
-.talk {
-	margin-bottom: 25px;
-	font-family: "Montserrat", "Helvetica Neue";
-}
-
-.contact {
-	margin-top: 90px;
-}
-
-
-/**
- * Cube^3 animation
- */
+/* Cube^3 animation */
 .cube1 {
 	margin-top: 120px;
 	margin-left: auto;
@@ -185,10 +189,7 @@ body {
     to {transform:rotate(00deg);}
 }
 
-
-/**
- * Animated rings
- */
+/* Animated rings */
 #github {
 	position: absolute;
 	left: 50%;
@@ -225,9 +226,7 @@ body {
 #r4 { -webkit-animation-delay: -9s;}
 
 
-/**
- * Responsive views
- */
+/* Responsiveness */
 @media (max-width: 1024px) {
 	.tab {
 		font-size: 1.4rem;
@@ -251,6 +250,7 @@ body {
 		font-size: 3rem;
 	}
 
+	/* Navigation */
 	.nav-container {
 		padding: 30px 0px;
 	}
@@ -271,10 +271,12 @@ body {
 		font-size: 1rem;
 	}
 
+	/* About */
 	#about-div {
 		padding: 12px;
 	}
 
+	/* Talks */
 	#talks-div {
 		padding: 12px;
 	}
@@ -283,10 +285,12 @@ body {
 		margin-bottom: 15px;
 	}
 
+	/* Projects */
 	.project {
 		padding: 10px 0 10px 0;
 	}
 
+	/* Contact */
 	.contact {
 		margin-top: 80px;
 	}
