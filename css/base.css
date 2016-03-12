@@ -14,7 +14,7 @@ body {
 	background-attachment: fixed;
 }
 
-.title {
+h1 {
 	margin-top: 60px;
 	text-align: center;
 	font-size: 5.4rem;
