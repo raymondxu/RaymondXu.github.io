@@ -35,16 +35,17 @@ h1 {
 	padding: 50px 0px 60px 0px;
 }
 
-.nav {
+h2 {
 	font-family: "Helvetica Neue", sans-serif;
 	font-weight: 200;
 	color: #FFFFFF;
 	font-size: 1.7rem;
 	margin: 30px;
 	cursor: pointer;
+	display: inline;
 }
 
-.nav:hover {
+h2:hover {
 	color: #FF9933;
 }
 
@@ -245,7 +246,7 @@ h1 {
 }
 
 @media (max-width: 768px) {
-	.title {
+	h1 {
 		margin-top: 20px;
 		font-size: 3rem;
 	}
@@ -255,7 +256,7 @@ h1 {
 		padding: 30px 0px;
 	}
 
-	.nav {
+	h2 {
 	   font-size: 1rem;
 	   margin: 10px 10px;
 	}
