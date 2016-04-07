@@ -75,6 +75,18 @@ h2:hover {
 }
 
 /* About */
+.divide {
+	padding-top: 50px;
+	height: 50px;
+}
+
+hr {
+	width: 100%;
+	border: 0;
+	height: 1px;
+	background-image: linear-gradient(to right, #FFFFFF, #FF9933 25%, #FF9933 75%, #FFFFFF 100%);
+}
+
 .colored-link {
 	color: #006BDF;
 }
@@ -253,28 +265,34 @@ h2:hover {
 
 	/* Navigation */
 	.nav-container {
-		padding: 30px 0px;
+		padding: 20px 0px 0px 0px;
 	}
 
 	h2 {
-	   font-size: 1rem;
+	   font-size: .9rem;
 	   margin: 10px 10px;
 	}
 
 	.tab-container {
+		padding-top: 20px;
 		margin-left: 5%;
 		width: 90%;
 	}
 
 	.tab {
 		padding: 25px;
-		min-height: 220px;
+		min-height: 0px;
 		font-size: 1rem;
 	}
 
 	/* About */
 	#about-div {
 		padding: 12px;
+	}
+
+	.divide {
+		padding-top: 20px;
+		height: 20px;
 	}
 
 	/* Talks */
@@ -287,12 +305,16 @@ h2:hover {
 	}
 
 	/* Projects */
+	#projects-div {
+		min-height: 220px;
+	}
+
 	.project {
 		padding: 10px 0 10px 0;
 	}
 
 	/* Contact */
 	.contact {
-		margin-top: 80px;
+		margin: 30px 0px;
 	}
 }
