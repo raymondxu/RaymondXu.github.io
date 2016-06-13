@@ -38,7 +38,6 @@ h1 {
 h2 {
 	font-family: "Helvetica Neue", sans-serif;
 	font-weight: 300;
-	color: #FFFFFF;
 	font-size: 1.7rem;
 	margin: 30px;
 	cursor: pointer;
@@ -47,6 +46,10 @@ h2 {
 
 h2:hover {
 	color: #FF9933;
+}
+
+.nav {
+	color: #FFFFFF;
 }
 
 .nav-selected {
