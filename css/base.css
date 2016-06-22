@@ -117,9 +117,15 @@ hr {
 }
 
 /* Talks */
-.talk {
-	margin-bottom: 25px;
+.talk-container {
+	margin-bottom: 40px;
 	font-family: "Montserrat", "Helvetica Neue";
+}
+
+.talk-description {
+	padding: 15px 70px;
+	font-size: 1.4rem;
+	color: #444444;
 }
 
 /* Contact */
@@ -290,7 +296,7 @@ hr {
 
 	/* About */
 	#about-div {
-		padding: 12px;
+		padding: 20px 30px;
 	}
 
 	.divide {
@@ -303,8 +309,13 @@ hr {
 		padding: 12px;
 	}
 
-	.talk {
-		margin-bottom: 15px;
+	.talk-container {
+		margin-bottom: 25px;
+	}
+
+	.talk-description {
+		padding: 15px 30px;
+		font-size: .9rem;
 	}
 
 	/* Projects */
