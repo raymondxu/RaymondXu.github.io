@@ -118,12 +118,12 @@ hr {
 
 /* Talks */
 .talk-container {
-	margin-bottom: 40px;
+	margin-bottom: 60px;
 	font-family: "Montserrat", "Helvetica Neue";
 }
 
 .talk-description {
-	padding: 15px 70px;
+	padding: 12px 70px;
 	font-size: 1.4rem;
 	color: #444444;
 }
@@ -296,7 +296,7 @@ hr {
 
 	/* About */
 	#about-div {
-		padding: 20px 30px;
+		padding: 20px;
 	}
 
 	.divide {
@@ -306,7 +306,7 @@ hr {
 
 	/* Talks */
 	#talks-div {
-		padding: 12px;
+		padding: 20px;
 	}
 
 	.talk-container {
@@ -314,7 +314,7 @@ hr {
 	}
 
 	.talk-description {
-		padding: 15px 30px;
+		padding: 15px 20px;
 		font-size: .9rem;
 	}
 
