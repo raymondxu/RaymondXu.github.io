@@ -123,9 +123,13 @@ hr {
 }
 
 .talk-description {
-	padding: 12px 70px;
+	padding: 20px 70px;
 	font-size: 1.4rem;
 	color: #444444;
+}
+
+.underlined-link {
+	text-decoration: underline!important;
 }
 
 /* Contact */
