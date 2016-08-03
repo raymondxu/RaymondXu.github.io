@@ -138,6 +138,11 @@ hr {
 
 .fa {
 	margin: 0 14px;
+	color: #444444;
+}
+
+.fa:hover {
+	color: #111111;
 }
 
 /* Cube^3 animation */
