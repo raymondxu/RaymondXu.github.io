@@ -136,13 +136,8 @@ hr {
 	margin-top: 90px;
 }
 
-.media-button {
-	border-radius: 50%;
-	display: inline-block;
-}
-
-.media-button:hover {
-	background-color: #EEEEEE;
+.fa {
+	margin: 0 14px;
 }
 
 /* Cube^3 animation */
