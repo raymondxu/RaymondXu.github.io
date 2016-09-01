@@ -12,6 +12,7 @@ a:link {
 body {
 	background-image: url("../images/stardust.png");
 	background-attachment: fixed;
+	background-color: #444348;
 }
 
 h1 {
