@@ -1,30 +1,18 @@
-" allow backspacing over everything in insert mode
 set backspace=indent,eol,start
-
-if has("vms")
-  set nobackup " do not keep a backup file, use versions instead
-else
-  set backup " keep a backup file
-endif
-
-set history=50 " keep 50 lines of command line history
-set ruler " show the cursor position all the time
-set showcmd " display incomplete commands
-set incsearch " do incremental searching
+set history=50
+set ruler
+set showcmd
+set incsearch
 set ignorecase
 set hlsearch
 
-" move vertically by visual line
 nnoremap j gj
 nnoremap k gk
 
-" enable mouse
 if has('mouse')
   set mouse=a
 endif
 
-" switch syntax highlighting on when the terminal has colors.
-" switch on highlighting for the last used search pattern.
 if &t_Co > 2 || has("gui_running")
   syntax on
   set hlsearch
