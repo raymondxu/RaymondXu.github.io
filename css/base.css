@@ -3,7 +3,6 @@
 	margin: 0;
 	padding: 0;
 	color: inherit;
-	overflow-x: hidden;
 }
 
 a:link {
@@ -263,6 +262,7 @@ hr {
 
 	.tab-container {
 		padding-top: 20px;
+		overflow-x: hidden;
 	}
 
 	.tab {
