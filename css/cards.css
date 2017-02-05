@@ -1,27 +1,43 @@
+#about-div {
+	display: none;
+}
+
+#projects-div {
+	display: none;
+}
+
 #talks-div {
+	display: none;
+}
+
+#contact-div {
+	display: none;
+}
+
+.card-container {
 	width: 100%;
 	max-width: 60rem;
 	margin: 1rem auto;
 	font-family: "Montserrat", "Helvetica Neue";
 }
 
-.talk-container {
+.card {
 	background-color: #FFFFFF;
 	height: 260px;
 	position: relative;
 	margin-bottom: 3rem;
 }
 
-.talk-image-container {
+.card-image-container {
 	float: left;
 	height: 260px;
 }
 
-.talk-image {
+.card-image {
 	height: 100%;
 }
 
-.talk-details-container {
+.card-details-container {
 	width: 57%;
 	padding: 40px 50px 50px 0;
 	position: absolute;
@@ -30,42 +46,42 @@
   	transform: translate(-50%, -50%);
 }
 
-.talk-title {
+.card-title {
 	font-size: 2rem;
 	margin-bottom: 1rem;
 	color: #222222;
 }
 
-.talk-desc {
+.card-desc {
 	font-size: 1.2rem;
 	color: #444444;
 }
 
 @media (max-width: 1024px) {
-	#talks-div {
+	.card-container {
 		width: 100%;
 		padding: 0;
 		margin-top: 2rem;
 		height: auto;
 	}
 
-	.talk-container {
+	.card {
 		margin-bottom: 1.5rem;
 	}
 
-	.talk-title {
+	.card-title {
 		font-size: 1.2rem;
 	}
 
-	.talk-desc {
+	.card-desc {
 		font-size: 0.8rem;
 	}
 
-	.talk-image {
+	.card-image {
 		display: none;
 	}
 
-	.talk-details-container {
+	.card-details-container {
 		width: 80%;
 		position: absolute;
 	  	top: 50%;

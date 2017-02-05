@@ -14,6 +14,7 @@
   <!-- Stylesheets -->
   <link href="css/base.css" rel="stylesheet" type="text/css">
   <link href="css/timeline.css" rel="stylesheet" type="text/css">
+  <link href="css/cards.css" rel="stylesheet" type="text/css">
   <!-- Fonts -->
   <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
@@ -37,17 +38,183 @@
 
     <!-- Navigation -->
     <div class="nav-container">
-      <span class="nav"><a href="about.html"><h2>ABOUT</h2></a></span>
-      <span class="nav"><a href="projects.html"><h2>PROJECTS</h2></a></span>
-      <span class="nav"><a href="talks.html"><h2>TALKS</h2></a></span>
-      <span class="nav"><a href="contact.html"><h2>CONTACT</h2></a></span>
+      <span id="about" class="nav"><h2>ABOUT</h2></a></span>
+      <span id="projects" class="nav"><h2>PROJECTS</h2></a></span>
+      <span id="talks" class="nav"><h2>TALKS</h2></a></span>
+      <span id="contact" class="nav"><h2>CONTACT</h2></a></span>
     </div>
 
+    
     <div class="tab-container">
       <!-- Cube^3 animation -->
       <div class="cube1 behind"> </div>
       <div class="cube2 behind"> </div>
       <div class="cube3 behind"> </div>
+
+      <!-- About -->
+      <div id="about-div" class="tab iter">
+        <p>Hey! I'm Raymond Xu, a junior studying Computer Science at Columbia University. I love building apps, thinking about pedagogy, and optimizing life. At school, I help run <a href="http://www.adicu.com" class="colored-link" target="_blank">ADI</a> and <a href="http://www.devfe.st" class="colored-link" target="_blank">DevFest</a>. I also write on <a href="https://www.medium.com/@raymondxu" class="colored-link" target="_blank">Medium</a>.</p>
+        <div class="divide"><hr></div>
+        <div class="container">
+          <div class="event">
+            <div class="event-image-container">
+              <a href="http://www.cs.columbia.edu" target="_blank"><img class="event-image" alt="columbia" src="img/seas.png"></a>
+            </div>
+            <div class="event-description"><p>B.S. Computer Science</p><p>2014 - 2018</p>
+            </div>
+          </div>
+          <div class="event">
+              <div class="event-image-container">
+                <a href="https://csorw4231-14.wikischolars.columbia.edu/" target="_blank"><img class="event-image" alt="algorithms" src="img/algo.png"></a>
+              </div>
+              <div class="event-description"><p>Teaching Assistant</p><p>Spring 2017</p>
+              </div>
+          </div>
+          <div class="event">
+              <div class="event-image-container">
+                <a href="https://www.lyft.com" target="_blank"><img class="event-image" alt="lyft" src="img/lyft.jpg"></a>
+              </div>
+              <div class="event-description"><p>Software Engineering Intern</p><p>Summer 2017</p>
+              </div>
+          </div>
+          <div class="event">
+            <div class="event-image-container">
+              <a href="http://www.google.com" target="_blank"><img class="event-image" alt="google" src="img/google.jpg"></a>
+            </div>
+            <div class="event-description"><p>Software Engineering Intern</p><p>Summer 2016</p>
+            </div>
+          </div>
+          <div class="event">
+            <div class="event-image-container">
+              <a href="http://www.adicu.com" target="_blank"><img class="event-image" alt="adi" src="img/adi.png"></a>
+            </div>
+            <div class="event-description"><p>Education Head</p><p>2014 - Present</p>
+            </div>
+          </div>
+          <div class="event">
+            <div class="event-image-container">
+              <a href="http://devfe.st" target="_blank"><img class="event-image" alt="devfest" src="img/devfest.png"></a>
+            </div>
+            <div class="event-description"><p>Lead Director</p><p>2015 - Present</p>
+            </div>
+          </div>
+          <div class="event">
+            <div class="event-image-container">
+              <a href="http://www.paypal.com" target="_blank"><img class="event-image" alt="paypal" src="img/paypal.jpg"></a>
+            </div>
+            <div class="event-description"><p>Software Engineering Intern</p><p>Summer 2015</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projects -->
+      <div id="projects-div" class="iter">
+        <div class="card">
+          <div class="card-image-container">
+            <a href="http://pokerchips.io"><img src="img/pokerchips.png" class="card-image"></a>
+          </div>
+          <div class="card-details-container">
+            <div class="card-title"><a href="http://pokerchips.io" class="colored-link">pokerchips.io</a></div>
+            <div class="card-desc">pokerchips.io transforms your phone into a virtual poker chip remote when you don't have physical chips, but still want to play poker.</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image-container">
+            <a href="https://github.com/RaymondXu/hubot-ping"><img src="img/hubot-ping.png" class="card-image"></a>
+          </div>
+          <div class="card-details-container">
+            <div class="card-title"><a href="https://github.com/RaymondXu/hubot-ping" class="colored-link">hubot-ping</a></div>
+            <div class="card-desc">A bot that tracks your outgoing pings on Slack, making sure you never forget any of your requests.</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image-container">
+            <a href="http://density.adicu.com"><img src="img/density.png" class="card-image"></a>
+          </div>
+          <div class="card-details-container">
+            <div class="card-title"><a href="http://density.adicu.com" class="colored-link">Density</a></div>
+            <div class="card-desc">Density is a Flask app that estimates how full study spaces around campus are using Wi-Fi data.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Talks -->
+      <div id="talks-div" class="iter">
+        <div class="card">
+          <div class="card-image-container">
+            <a href="http://raymondxu.io/wgc.pdf"><img src="img/wgc.png" class="card-image"></a>
+          </div>
+          <div class="card-details-container">
+            <div class="card-title"><a href="http://raymondxu.io/wgc.pdf" class="colored-link">Writing Good Code</a></div>
+            <div class="card-desc">This talk teaches principles of effective software development that aren't emphasized in college coursework. In it, I explain why code style, design patterns, and testing are important for writing maintainable code, and introduce relevant tools such as linters and testing frameworks.</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image-container">
+            <a href="http://raymondxu.io/algorithms.pdf"><img src="img/afi.png" class="card-image"></a>
+          </div>
+          <div class="card-details-container">
+            <div class="card-title"><a href="http://raymondxu.io/algorithms.pdf" class="colored-link">Algorithms for Interviews</a></div>
+            <div class="card-desc">The sequel to <a href="http://www.raymondxu.io/datastructures.pdf" class="underlined-link" target="_blank">Data Structures for Interviews</a>, this talk explores sorting, recursion, greedy algorithms, and dynamic programming.</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image-container">
+            <a href="http://raymondxu.io/hackcon16.pdf"><img src="img/hackcon.png" class="card-image"></a>
+          </div>
+          <div class="card-details-container">
+            <div class="card-title"><a href="http://raymondxu.io/hackcon16.pdf" class="colored-link">5 Steps for Effective Education at Hackathons</a></div>
+            <div class="card-desc">I gave this workshop at <a href="http://www.hackcon.io/na" class="underlined-link" target="_blank">HackCon IV</a> to an audience of 70 hackathon organizers from around the nation. It details a methodology for constructing effective educational models for hackathons and explains the importance of thoughtful iteration.</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image-container">
+            <a href="http://raymondxu.io/datastructures.pdf"><img src="img/dsfi.png" class="card-image"></a>
+          </div>
+          <div class="card-details-container">
+            <div class="card-title"><a href="http://raymondxu.io/datastructures.pdf" class="colored-link">Data Structures for Interviews</a></div>
+            <div class="card-desc">I give this talk at Columbia every fall during interview season. It miraculously packs a semester's worth of content from a data structures class into one hour.</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image-container">
+            <a href="https://learn.devfe.st/webdev"><img src="img/webdev.png" class="card-image"></a>
+          </div>
+          <div class="card-details-container">
+            <div class="card-title"><a href="https://learn.devfe.st/webdev" class="colored-link">Web Development with Flask</a></div>
+            <div class="card-desc">I co-authored this original curriculum for <a href="http://devfe.st" class="underlined-link" target="_blank">DevFest 2016</a>, <a href="http://adicu.com" class="underlined-link" target="_blank">ADI</a>'s week-long workshop series and hackathon. This comprehensive tutorial teaches web development by guiding students through the process of building a reading list app using Flask and Mongo. Read more about the DevFest Track System and its educational methodology <a href="https://medium.com/stories-from-adi/rethinking-education-at-devfest-d5fac7c303be" class="underlined-link" target="_blank">here</a></div>
+          </div>
+        </div>
+      
+        <div class="card">
+          <div class="card-image-container">
+            <a href="https://www.github.com/raymondxu/javaworkshop"><img src="img/java.png" class="card-image"></a>
+          </div>
+          <div class="card-details-container">
+            <div class="card-title"><a href="https://www.github.com/raymondxu/javaworkshop" class="colored-link">Intermediate Java</a></div>
+            <div class="card-desc">This workshop functions as a supplement to a typical introductory computer science course. It covers Java variable concepts, abstraction, and concludes with a splash of design patterns.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact -->
+      <div id="contact-div" class="tab iter">
+        <div class="contact">
+          <a href="mailto:mail@raymondxu.io?Subject=Hello!" target="_top"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
+          <a href="https://www.medium.com/@raymondxu" target="_blank"><i class="fa fa-medium fa-2x" aria-hidden="true"></i></a>
+          <a href="https://www.github.com/RaymondXu" target="_blank"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a>
+          <a href="https://www.facebook.com/RayXu" target="_blank"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/pub/raymond-xu/65/303/b58" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
     </div>
   </div>
 </body>
