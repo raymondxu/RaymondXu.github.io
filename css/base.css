@@ -263,6 +263,7 @@ hr {
 	.tab-container {
 		padding-top: 20px;
 		overflow-x: hidden;
+		min-height: 300px;
 	}
 
 	.tab {
