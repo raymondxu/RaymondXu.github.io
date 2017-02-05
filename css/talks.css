@@ -1,0 +1,71 @@
+#talks-div {
+	width: 100%;
+	max-width: 60rem;
+	margin: 1rem auto;
+	font-family: "Montserrat", "Helvetica Neue";
+}
+
+.talk-container {
+	background-color: #FFFFFF;
+	height: 260px;
+	position: relative;
+	margin-bottom: 3rem;
+}
+
+.talk-image-container {
+	float: left;
+	height: 260px;
+}
+
+.talk-image {
+	height: 100%;
+}
+
+.talk-details-container {
+	width: 57%;
+	padding: 40px 50px 50px 0;
+	position: absolute;
+  	top: 50%;
+  	left: 72%;
+  	transform: translate(-50%, -50%);
+}
+
+.talk-title {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+	color: #222222;
+}
+
+.talk-desc {
+	font-size: 1.2rem;
+	color: #444444;
+}
+
+@media (max-width: 1024px) {
+	#talks-div {
+		width: 100%;
+		padding: 0;
+		margin-top: 2rem;
+		height: auto;
+	}
+
+	.talk-title {
+		font-size: 1.2rem;
+	}
+
+	.talk-desc {
+		font-size: 0.9rem;
+	}
+
+	.talk-image {
+		display: none;
+	}
+
+	.talk-details-container {
+		width: 80%;
+		position: absolute;
+	  	top: 50%;
+	  	left: 55%;
+	  	transform: translate(-50%, -50%);
+	}
+}
