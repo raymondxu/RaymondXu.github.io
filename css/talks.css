@@ -49,12 +49,16 @@
 		height: auto;
 	}
 
+	.talk-container {
+		margin-bottom: 1.5rem;
+	}
+
 	.talk-title {
 		font-size: 1.2rem;
 	}
 
 	.talk-desc {
-		font-size: 0.9rem;
+		font-size: 0.8rem;
 	}
 
 	.talk-image {
