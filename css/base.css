@@ -89,10 +89,19 @@ hr {
 }
 
 .colored-link {
+	color: #006BDF;
 	border-bottom: 2px solid transparent;
 }
 
 .colored-link:hover {
+	border-bottom: 2px solid #006BDF;
+}
+
+.link {
+	border-bottom: 2px solid transparent;
+}
+
+.link:hover {
 	color: #006BDF;
 	border-bottom: 2px solid #006BDF;
 }
