@@ -36,8 +36,8 @@ h1 {
 }
 
 h2 {
-	font-family: "Helvetica Neue", sans-serif;
-	font-weight: 300;
+	font-family: "Montserrat", "Helvetica Neue", sans-serif;
+	font-weight: 100;
 	font-size: 1.7rem;
 	margin: 30px;
 	cursor: pointer;
@@ -76,6 +76,10 @@ h2:hover {
 }
 
 /* About */
+#about-div {
+	padding-top: 100px;
+}
+
 .divide {
 	padding-top: 50px;
 	height: 50px;
