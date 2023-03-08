@@ -1,13 +1,16 @@
 #about-div {
 	display: none;
+	padding-bottom: 2rem;
 }
 
 #projects-div {
 	display: none;
+	padding-bottom: 2rem;
 }
 
 #talks-div {
 	display: none;
+	padding-bottom: 2rem;
 }
 
 #contact-div {
