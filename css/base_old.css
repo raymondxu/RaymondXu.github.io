@@ -1,0 +1,309 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    color: inherit;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+body {
+    background-image: url("../img/stardust.png");
+    background-attachment: fixed;
+    background-color: #444348;
+}
+
+h1 {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 300;
+    color: #FFFFFF;
+    font-family: "Montserrat", "Helvetica Neue", sans-serif;
+    text-decoration: none;
+}
+
+/* .one-viewport {
+    height: 1vh;
+} */
+
+/* Navigation */
+.nav-container {
+    text-align: center;
+    padding: 50px 0px 60px 0px;
+}
+
+h2 {
+    font-family: "Montserrat", "Helvetica Neue", sans-serif;
+    font-weight: 100;
+    font-size: 1.7rem;
+    margin: 30px;
+    cursor: pointer;
+    display: inline;
+}
+
+h2:hover {
+    color: #FF9933;
+}
+
+.nav {
+    color: #FFFFFF;
+}
+
+.nav-selected {
+    color: #FF9933;
+}
+
+.tab-container {
+    width: 100%;
+    max-width: 60rem;
+    margin: 1rem auto;
+    font-family: "Montserrat", "Helvetica Neue";
+}
+
+.tab {
+    text-align: center;
+    padding: 50px;
+    min-height: 250px;
+    border-radius: 12px;
+    background-color: #FFFFFF;
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 300;
+    color: black;
+    font-size: 1.8rem;
+}
+
+/* About */
+#about-div {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+}
+
+.divide {
+    padding-top: 50px;
+    height: 50px;
+}
+
+hr {
+    width: 100%;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, #FFFFFF, #FF9933 25%, #FF9933 75%, #FFFFFF 100%);
+}
+
+.colored-link {
+    color: #006BDF;
+    border-bottom: 2px solid transparent;
+}
+
+.colored-link:hover {
+    border-bottom: 2px solid #006BDF;
+}
+
+.link {
+    border-bottom: 2px solid transparent;
+}
+
+.link:hover {
+    color: #006BDF;
+    border-bottom: 2px solid #006BDF;
+}
+
+/* Projects */
+.project {
+    font-family: "Montserrat", "Helvetica Neue", sans-serif;
+    display: inline-block;
+    border-radius: 12px;
+    width: 16%;
+    min-width: 125px;
+    padding: 50px 20px 50px 20px;
+    margin: 45px 10px 445px 10px;
+    background-color: #788CD3;
+    font-size: 1.8rem;
+    color: #FFFFFF;
+}
+
+.project:hover {
+    background-color: #6C7EBE;
+}
+
+.underlined-link {
+    text-decoration: underline!important;
+}
+
+.underlined-link:hover {
+    color: #006BDF;
+}
+
+/* Contact */
+.contact {
+    margin-top: 90px;
+}
+
+.fa {
+    margin: 0 14px;
+    color: #444444;
+}
+
+.fa:hover {
+    color: #111111;
+}
+
+/* Cube^3 animation */
+.cube1 {
+    margin-top: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    width: 50px;
+    background-color: #FFFFFF;
+    -webkit-animation: spin 10s linear infinite;
+    -moz-animation: spin 10s linear infinite;
+    -o-animation: spin 10s linear infinite;
+}
+
+.cube2 {
+    margin-top: -61px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 71px;
+    width: 71px;
+    background-color: #FFFFFF;
+    opacity: 0.5;
+    -webkit-animation: negspin 10s linear infinite;
+    -moz-animation: negspin 10s linear infinite;
+    -o-animation: negspin 10s linear infinite;
+}
+
+.cube3 {
+    margin-top: -85px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+    width: 100px;
+    background-color: #FFFFFF;
+    opacity: 0.25;
+    -webkit-animation: spin 10s linear infinite;
+    -moz-animation: spin 10s linear infinite;
+    -o-animation: spin 10s linear infinite;
+}
+
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+@-moz-keyframes negspin {
+    from { -moz-transform: rotate(360deg); }
+    to { -moz-transform: rotate(0deg); }
+}
+
+@-webkit-keyframes negspin {
+    from { -webkit-transform: rotate(360deg); }
+    to { -webkit-transform: rotate(0deg); }
+}
+
+@keyframes negspin {
+    from {transform:rotate(360deg);}
+    to {transform:rotate(00deg);}
+}
+
+/* Animated rings */
+#github {
+    position: absolute;
+    left: 50%;
+    margin-left: -60px;
+    margin-top: 50px;
+}
+
+.ring {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    margin-left: -127px;
+    margin-top: -17px;
+    background-color: transparent;
+    border: 2px #006BDF solid;
+    -webkit-animation-name: ani; 
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-duration: 9s;
+    -webkit-animation-direction: normal;
+}
+
+@-webkit-keyframes ani {
+    0% {-webkit-transform: scale(0.48); opacity: 0} 
+    3% {-webkit-transform: scale(0.48); opacity: 1} 
+    95% {-webkit-transform: scale(1); opacity: 1;}
+    100% {-webkit-transform: scale(1); opacity: 0;}
+}
+
+#r2 { -webkit-animation-delay: -3s;}
+#r3 { -webkit-animation-delay: -6s;}
+#r4 { -webkit-animation-delay: -9s;}
+
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    h1 {
+        margin-top: 20px;
+        font-size: 2.5rem;
+    }
+
+    /* Navigation */
+    .nav-container {
+        padding: 20px 0px 0px 0px;
+    }
+
+    h2 {
+       font-size: .8rem;
+       margin: 10px 10px;
+    }
+
+    .tab-container {
+        padding-top: 20px;
+        overflow-x: hidden;
+        min-height: 300px;
+    }
+
+    .tab {
+        padding: 25px;
+        min-height: 0px;
+        font-size: 1rem;
+        border-radius: 0px;
+    }
+
+    /* About */
+    #about-div {
+        padding: 20px;
+    }
+
+    .divide {
+        padding-top: 20px;
+        height: 20px;
+    }
+
+    /* Contact */
+    .contact {
+        margin: 30px 0px;
+    }
+
+    .fa {
+        margin: 0px 6px;
+    }
+}
