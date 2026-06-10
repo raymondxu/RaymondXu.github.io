@@ -1,8 +1,17 @@
-* {
+html {
+    box-sizing: border-box;
+    background-color: #F7F7F7;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
     margin: 0;
     padding: 0;
     color: inherit;
-    font-family: "Roboto", "Helvetica Neue", sans-serif;
+}
+
+body {
+    font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
     background-color: #F7F7F7;
 }
 
@@ -36,6 +45,11 @@ a:hover {
     opacity: 0.65;
 }
 
+a:focus-visible {
+    outline: 2px solid #222222;
+    outline-offset: 4px;
+}
+
 .left-div {
     flex: 0 0 60%; /* Takes up 60% of the width */
     padding-right: 60px;
@@ -47,8 +61,10 @@ a:hover {
 }
 
 .image {
+    display: block;
     height: 500px;
     width: auto;
+    max-width: 100%;
 }
 
 @media (max-width: 768px) {
@@ -76,6 +92,5 @@ a:hover {
 
     .image {
         height: 400px;
-        text-align: center
     }
 }
